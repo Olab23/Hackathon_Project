@@ -4,6 +4,33 @@
   <artifactId>Hackathon_Policy_Bazar</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Hackathon_Policy_Bazar</name>
+  <build>
+	  <pluginManagement>
+		  
+		  <plugins>
+			  <plugin>
+		          <groupId>org.apache.maven.plugins</groupId>
+		          <artifactId>maven-compiler-plugin</artifactId>
+		          <version>3.12.1</version>
+		       </plugin>
+			  
+			  <plugin>
+		          <groupId>org.apache.maven.plugins</groupId>
+		          <artifactId>maven-surefire-plugin</artifactId>
+		          <version>3.2.5</version>
+		          <configuration>
+					  <suiteXmlFiles>
+						  <suiteXmlFile>testng.xml</suiteXmlFile>
+					  </suiteXmlFiles>
+				  </configuration>
+		       </plugin>
+			  
+			  
+		  </plugins>
+	  </pluginManagement>
+	  
+  </build>
+  
   <dependencies>
 	  
 	  <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->

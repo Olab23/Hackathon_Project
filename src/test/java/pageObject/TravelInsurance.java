@@ -13,6 +13,7 @@ import org.openqa.selenium.support.PageFactory;
 public class TravelInsurance extends BasePage{
 	
 	WebDriver driver;
+	
     String[] datastr = new String[3];
 	public TravelInsurance(WebDriver driver) {
 		super(driver);
@@ -22,10 +23,23 @@ public class TravelInsurance extends BasePage{
 	
 	@FindBy(id="country")
 	WebElement Country;
+	
+	@FindBy(className="search-item")
+	List<WebElement> CountryList;
+	
 	@FindBy(xpath="//li[normalize-space()='United Kingdom']")
 	WebElement EuroCountry;
+	
 	@FindBy(xpath="//button[text()=\"Next\"]")
 	WebElement Next;
+	
+	@FindBy(className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-displayInline")
+	List<WebElement> MonthYear;
+	
+	@FindBy(className="MuiButtonBase-root MuiIconButton-root MuiPickersArrowSwitcher-iconButton MuiIconButton-sizeSmall")
+	WebElement NextMonth;
+	
+	
 	@FindBy(xpath="//*[@id=\"prequote-wrapper\"]/div[2]/div/div[1]/div/div[1]/div/div")
 	WebElement selDate;
 	@FindBy(xpath="//button[@aria-label=\"Feb 20, 2024\"]")
@@ -58,42 +72,71 @@ public class TravelInsurance extends BasePage{
 	List<WebElement> Price;
 	
 	public void SelectCountry() throws InterruptedException {
-		// TODO Auto-generated method stub
 		Country.click();
 	}
 	
 	public void Eurocountry() throws InterruptedException {
-		// TODO Auto-generated method stub
 		EuroCountry.click();
+//		String Destination = "United Kingdom";
+		
+//		int CountryCount = CountryList.size();
+//		
+//		for(int i=0; i<=CountryCount; i++) {
+//			String Country = CountryList.get(i).getText();
+//			if(Country.equals(Destination)) {
+//				CountryList.get(i).click();
+//			}
+//		}
+		
 	}
 	
 	public void NextPage() throws InterruptedException {
-		// TODO Auto-generated method stub
+
 		Next.click();
 	}
 	
 	public void SelectDate() throws InterruptedException {
-		// TODO Auto-generated method stub
+		
 		selDate.click();
+//		String sMMYYYY = "March 2024";
+//		String sDay = "10";
+//		String eMMYYYY = "April 2024";
+//		String eDay = "10";
+//		
+//		for(int i=0; i<=2; i++) {
+//			String my = MonthYear.get(i).getText();
+//			
+//			if(my.equals(sMMYYYY)) {
+//				break;
+//			}else {
+//				NextMonth.click();
+//			}
+//		}
+//		
+			
+			
+			
+			
+			
 	}
 	
 	public void StartDate() throws InterruptedException {
-		// TODO Auto-generated method stub
+	
 		Firstdate.click();
 	}
 	
 	public void LastDate() throws InterruptedException {
-		// TODO Auto-generated method stub
+		
 		Lastdate.click();
 	}
 	
 	public void countpeople() throws InterruptedException {
-		// TODO Auto-generated method stub
+		
 		people.click();
 	}
 	
 	public void selectage() throws InterruptedException {
-		// TODO Auto-generated method stub
+	
 		ages.click();
 		age1.click();
 		ages2.click();
@@ -102,19 +145,19 @@ public class TravelInsurance extends BasePage{
 	}
 	
 	public void MedicalCond() throws InterruptedException {
-		// TODO Auto-generated method stub
+	
 		mediCond.click();
 		Next.click();
 	}
 	
 	public void PhoneNo() throws InterruptedException {
-		// TODO Auto-generated method stub
+		
 		mobileNo.sendKeys("9696682791");
 		viewplans.click();
 	}
 	
 	public void Plans() throws InterruptedException {
-		// TODO Auto-generated method stub
+		
 		Thread.sleep(4000);
 		sortby.click();
 		LowToHigh.click();
