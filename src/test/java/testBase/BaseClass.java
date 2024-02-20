@@ -99,7 +99,7 @@ public class BaseClass {
 		
 		@AfterClass
 		public void tearDown() {
-			driver.quit();
+//			driver.quit();
 		}
 		
 		public String captureScreen(String tname) throws IOException {

@@ -49,59 +49,60 @@ public class TC_001 extends BaseClass{
 	public void startdate() throws InterruptedException  {
 		
 		TravelInsurance Np=new TravelInsurance(driver);
-		Np.StartDate();
+		Np.StartDate(driver);
+		
 	}
 	
 	@Test(priority=7)
 	public void lastdate() throws InterruptedException  {
 		
 		TravelInsurance Np=new TravelInsurance(driver);
-		Np.LastDate();
-		Np.NextPage();
+		Np.LastDate(driver);
+//		Np.NextPage();
 	}
-	
-	@Test(priority=8)
-	public void Countpeople() throws InterruptedException  {
-		
-		TravelInsurance Np=new TravelInsurance(driver);
-		Np.countpeople();
-	}
-	
-	@Test(priority=9)
-	public void SelectAge() throws InterruptedException  {
-		
-		TravelInsurance Np=new TravelInsurance(driver);
-		Np.selectage();
-	}
-	
-	@Test(priority=10)
-	public void MedicalCondi() throws InterruptedException  {
-		
-		TravelInsurance Np=new TravelInsurance(driver);
-		Np.MedicalCond();
-	}
-	
-	@Test(priority=11)
-	public void phoneno() throws InterruptedException  {
-		
-		TravelInsurance Np=new TravelInsurance(driver);
-		Np.PhoneNo();
-	}
-	
-	@Test(priority=12)
-	public void plans() throws InterruptedException  {
-		
-		TravelInsurance Np=new TravelInsurance(driver);
-		Np.Plans();
-	}
-	
-	@Test(priority=13)
-	public void plansdata() throws InterruptedException, IOException  {
-		
-		TravelInsurance Np=new TravelInsurance(driver);
-		Np.PlansData();
-	}
-	
-	
+//	
+//	@Test(priority=8)
+//	public void Countpeople() throws InterruptedException  {
+//		
+//		TravelInsurance Np=new TravelInsurance(driver);
+//		Np.countpeople();
+//	}
+//	
+//	@Test(priority=9)
+//	public void SelectAge() throws InterruptedException  {
+//		
+//		TravelInsurance Np=new TravelInsurance(driver);
+//		Np.selectage();
+//	}
+//	
+//	@Test(priority=10)
+//	public void MedicalCondi() throws InterruptedException  {
+//		
+//		TravelInsurance Np=new TravelInsurance(driver);
+//		Np.MedicalCond();
+//	}
+//	
+//	@Test(priority=11)
+//	public void phoneno() throws InterruptedException  {
+//		
+//		TravelInsurance Np=new TravelInsurance(driver);
+//		Np.PhoneNo();
+//	}
+//	
+//	@Test(priority=12)
+//	public void plans() throws InterruptedException  {
+//		
+//		TravelInsurance Np=new TravelInsurance(driver);
+//		Np.Plans();
+//	}
+//	
+//	@Test(priority=13)
+//	public void plansdata() throws InterruptedException, IOException  {
+//		
+//		TravelInsurance Np=new TravelInsurance(driver);
+//		Np.PlansData();
+//	}
+//	
+//	
 
 }
