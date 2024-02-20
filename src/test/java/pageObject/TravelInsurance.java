@@ -43,7 +43,7 @@ public class TravelInsurance extends BasePage{
 	@FindBy(xpath="//button[@class='MuiButtonBase-root MuiPickersDay-root MuiPickersDateRangeDay-day MuiPickersDateRangeDay-notSelectedDate MuiPickersDateRangeDay-dayOutsideRangeInterval']")
 	List<WebElement> Dates2;
 	
-	@FindBy(xpath="//button[@class='MuiButtonBase-root MuiIconButton-root MuiPickersArrowSwitcher-iconButton MuiIconButton-sizeSmall']")
+	@FindBy(xpath="(//span[@class='MuiIconButton-label'])[4]")
 	WebElement NextMonth;
 	
 	
@@ -111,102 +111,53 @@ public class TravelInsurance extends BasePage{
 	
 	public void StartDate(WebDriver driver) throws InterruptedException {
 		
-		String sMMYYYY = "March 2024";
-		String sDay = "10";
-		
-//		for(int i=0; i<2; i++) {
-//			String my = MonthYear.get(i).getText();
-//			
-//			if(my.equals(sMMYYYY)) {
-//				NextMonth.click();
-//				for(int j=0; j<=31; j++) {
-//					
-//					String days = Dates.get(j).getText();
-//					
-//					if(days.equals(sDay)) {
-//						Dates.get(j).click();
-//						break;
-//					}
-//					
-//				}
-//				
-//				break;
-//			}
-//		}
-//		
+		String month_year= "March 2024";
+		String startdate = "20";
+		String enddate="10";
+		String month_year1="June 2024";
+	
+	
 		while(true) {
 			String month=driver.findElement(By.xpath("(//*[@class='MuiTypography-root MuiTypography-subtitle1 MuiTypography-displayInline'])[1]")).getText();
-			if(month.equals(sMMYYYY)) {
+			if(month.equals(month_year)) {
 				break;
 			}
 			else {
-				NextMonth.click();
+				driver.findElement(By.xpath("(//span[@class='MuiIconButton-label'])[4]")).click();
 			}
 			List<WebElement> datepicker1 = driver.findElements(By.xpath("//*[@class='MuiPickersDateRangeDay-root']"));
 			for(WebElement element:datepicker1) {
 				String date=element.getText();
-				if(date.equals(sDay)) {
+				if(date.equals(startdate)) {
 					element.click();
 					break;
 				}
 			}
 		}
 		
+		while(true) {
+			String month=driver.findElement(By.xpath("(//*[@class='MuiTypography-root MuiTypography-subtitle1 MuiTypography-displayInline'])[1]")).getText();
+			if(month.equals(month_year1)) {
+				break;
+			}
+			else {
+				driver.findElement(By.xpath("(//span[@class='MuiIconButton-label'])[4]")).click();
+			}
+			List<WebElement> datepicker1 = driver.findElements(By.xpath("//*[@class='MuiPickersDateRangeDay-root']"));
+			for(WebElement element:datepicker1) {
+				String date=element.getText();
+				if(date.equals(enddate)) {
+					element.click();
+					break;
+				}
+			}
+		}
 		
 	}
 	
 	public void LastDate(WebDriver driver) throws InterruptedException {
 		
-		endDate.click();
-		String eMMYYYY = "June 2024";
-		String eDay = "23";
-		
-//	while(true) {	
-//			String my = MonthYear2.getText();
-//			
-//			if(my.equals(eMMYYYY)) {
-//					break;
-//				}
-//			
-//			else {
-//				NextMonth.click();
-//			}
-//			for(int j=0; j<=31; j++) {
-//				
-//				String days = Dates2.get(j).getText();
-//				
-//				if(days.equals(eDay)) {
-//					Dates2.get(j).click();
-//					break;
-//				}
-//			
-//			for(WebElement element:Dates) {
-//				String date=element.getText();
-//				if(date.equals(eDay)) {
-//					element.click();
-//					break;
-//				}
-//			}
-		
-		while(true) {
-			String month=driver.findElement(By.xpath("(//*[@class='MuiTypography-root MuiTypography-subtitle1 MuiTypography-displayInline'])[1]")).getText();
-			if(month.equals(eMMYYYY)) {
-				break;
-			}
-			else {
-				NextMonth.click();
-			}
-			List<WebElement> datepicker1 = driver.findElements(By.xpath("//*[@class='MuiPickersDateRangeDay-root']"));
-			for(WebElement element:datepicker1) {
-				String date=element.getText();
-				if(date.equals(eDay)) {
-					element.click();
-					break;
-				}
-			}
-		}
-			
-//		Next.click();
+		Next.click();
 	}
 	
 	public void countpeople() throws InterruptedException {

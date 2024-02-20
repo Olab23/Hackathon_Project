@@ -113,10 +113,10 @@ public class ExtentReportManager implements ITestListener {
 
 		//To send email with attachment
 		//sendEmail(sender email,sender password(encrypted),recipient email);
-		sendEmail("abc@gmail.com","xyz123xyz","xyz@gmail.com");
+//		sendEmail("abc@gmail.com","xyz123xyz","xyz@gmail.com");
 	}
 	
-	
+	/*
 	//User defined method for sending email..
 	public void sendEmail(String senderEmail,String senderPassword,String recipientEmail)
 	{
@@ -128,7 +128,7 @@ public class ExtentReportManager implements ITestListener {
         properties.put("mail.smtp.port", "587");
 
         // Create a Session object
-        /*Session session = Session.getInstance(properties, new Authenticator() {
+        Session session = Session.getInstance(properties, new Authenticator() {
            protected PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication(senderEmail, senderPassword);
             }
@@ -174,8 +174,8 @@ public class ExtentReportManager implements ITestListener {
 
         } catch (Exception e) {
             e.printStackTrace();
-        }*/
+        }
             
-	}
+	}*/
 
 }

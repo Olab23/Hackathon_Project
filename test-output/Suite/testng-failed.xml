@@ -7,9 +7,15 @@
     <classes>
       <class name="testCases.TC_001">
         <methods>
+          <include name="SelectAge"/>
           <include name="tearDown"/>
           <include name="lastdate"/>
+          <include name="Countpeople"/>
+          <include name="phoneno"/>
+          <include name="plans"/>
           <include name="setup"/>
+          <include name="MedicalCondi"/>
+          <include name="plansdata"/>
         </methods>
       </class> <!-- testCases.TC_001 -->
     </classes>
