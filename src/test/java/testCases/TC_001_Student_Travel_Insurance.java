@@ -8,7 +8,7 @@ import pageObject.HomePage;
 import pageObject.TravelInsurance;
 import testBase.BaseClass;
 
-public class TC_001 extends BaseClass{
+public class TC_001_Student_Travel_Insurance extends BaseClass{
 	
 	@Test(priority=1)
 	public void homepage() {

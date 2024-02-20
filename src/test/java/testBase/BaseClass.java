@@ -25,7 +25,7 @@ import org.testng.annotations.Parameters;
 
 public class BaseClass {
 	
-	public WebDriver driver;
+	static public WebDriver driver;
 	public Properties p;
 		
 		@SuppressWarnings("deprecation")
@@ -101,20 +101,21 @@ public class BaseClass {
 		public void tearDown() {
 //			driver.quit();
 		}
-		
-		public String captureScreen(String tname) throws IOException {
 
+
+		public String captureScreen(String tname) {
+			
 			String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-					
+			
 			TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
 			File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
 			
-			String targetFilePath=System.getProperty("user.dir")+"\\Screenshots\\" + tname + "_" + timeStamp + ".png";
+			String targetFilePath=System.getProperty("user.dir")+"\\screenshots\\" + tname + "_" + timeStamp + ".png";
 			File targetFile=new File(targetFilePath);
 			
 			sourceFile.renameTo(targetFile);
-				
+			
 			return targetFilePath;
-
 		}
+		
 }
