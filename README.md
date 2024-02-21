@@ -11,8 +11,8 @@ Detailed Description: Hackath Ideas
 2. Get a Car Insurance quote, proceed without  car number, keep filling details, give invalid email or phone number & capture the error message
 3.  Retrieve all Health Insurance menu items and store in a List; Display the same
 
-Anurag Bulbule
-Deepali Raipure
-Sourabh Swami 
-Navneet Srivastav
+Anurag Bulbule,
+Deepali Raipure,
+Sourabh Swami,
+Navneet Srivastav,
 Atharva Nalavde
