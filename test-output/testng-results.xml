@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="24" passed="18" failed="6" skipped="0">
+<testng-results ignored="0" total="13" passed="7" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-21T12:06:11 IST" name="Suite" finished-at="2024-02-21T12:08:59 IST" duration-ms="167478">
+  <suite started-at="2024-02-21T17:52:43 IST" name="Suite" finished-at="2024-02-21T17:55:36 IST" duration-ms="172301">
     <groups>
     </groups>
-    <test started-at="2024-02-21T12:06:11 IST" name="Test" finished-at="2024-02-21T12:08:59 IST" duration-ms="167478">
-      <class name="testCases.TC_03_Health_Insurance">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_03_Health_Insurance@471a9022]" started-at="2024-02-21T12:08:12 IST" name="setup" finished-at="2024-02-21T12:08:26 IST" duration-ms="13533" status="PASS">
+    <test started-at="2024-02-21T17:52:43 IST" name="Test" finished-at="2024-02-21T17:55:36 IST" duration-ms="172301">
+      <class name="testCases.TC_001_Student_Travel_Insurance">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@1b410b60]" started-at="2024-02-21T17:52:45 IST" name="setup" finished-at="2024-02-21T17:53:43 IST" duration-ms="57834" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,36 +16,56 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[edge]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="HomePage()[pri:0, instance:testCases.TC_03_Health_Insurance@471a9022]" started-at="2024-02-21T12:08:26 IST" name="HomePage" finished-at="2024-02-21T12:08:58 IST" duration-ms="32471" status="FAIL">
+        <test-method signature="homepage()[pri:1, instance:testCases.TC_001_Student_Travel_Insurance@1b410b60]" started-at="2024-02-21T17:53:43 IST" name="homepage" finished-at="2024-02-21T17:53:43 IST" duration-ms="354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+        <test-method signature="selcountry()[pri:2, instance:testCases.TC_001_Student_Travel_Insurance@1b410b60]" started-at="2024-02-21T17:53:43 IST" name="selcountry" finished-at="2024-02-21T17:54:23 IST" duration-ms="39325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selcountry -->
+        <test-method signature="Eurcountry()[pri:3, instance:testCases.TC_001_Student_Travel_Insurance@1b410b60]" started-at="2024-02-21T17:54:23 IST" name="Eurcountry" finished-at="2024-02-21T17:54:23 IST" duration-ms="365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Eurcountry -->
+        <test-method signature="Next()[pri:4, instance:testCases.TC_001_Student_Travel_Insurance@1b410b60]" started-at="2024-02-21T17:54:23 IST" name="Next" finished-at="2024-02-21T17:54:23 IST" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Next -->
+        <test-method signature="date()[pri:5, instance:testCases.TC_001_Student_Travel_Insurance@1b410b60]" started-at="2024-02-21T17:54:23 IST" name="date" finished-at="2024-02-21T17:54:24 IST" duration-ms="498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- date -->
+        <test-method signature="startdate()[pri:6, instance:testCases.TC_001_Student_Travel_Insurance@1b410b60]" started-at="2024-02-21T17:54:24 IST" name="startdate" finished-at="2024-02-21T17:54:46 IST" duration-ms="22271" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='step1ContinueBtn']"}
-  (Session info: MicrosoftEdge=121.0.2277.128)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//*[@class='MuiTypography-root MuiTypography-subtitle1 MuiTypography-displayInline'])[1]"}
+  (Session info: chrome=120.0.6099.130)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [bb7212b467a1863eed71cace47f7f562, findElement {using=xpath, value=//button[@id='step1ContinueBtn']}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.128, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62065}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62065/devtoo..., se:cdpVersion: 121.0.2277.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bb7212b467a1863eed71cace47f7f562]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b66551e67a378ddb32e428416d5ef12c, findElement {using=xpath, value=(//*[@class='MuiTypography-root MuiTypography-subtitle1 MuiTypography-displayInline'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62565}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62565/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b66551e67a378ddb32e428416d5ef12c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='step1ContinueBtn']"}
-  (Session info: MicrosoftEdge=121.0.2277.128)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//*[@class='MuiTypography-root MuiTypography-subtitle1 MuiTypography-displayInline'])[1]"}
+  (Session info: chrome=120.0.6099.130)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [bb7212b467a1863eed71cace47f7f562, findElement {using=xpath, value=//button[@id='step1ContinueBtn']}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.128, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62065}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62065/devtoo..., se:cdpVersion: 121.0.2277.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bb7212b467a1863eed71cace47f7f562
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b66551e67a378ddb32e428416d5ef12c, findElement {using=xpath, value=(//*[@class='MuiTypography-root MuiTypography-subtitle1 MuiTypography-displayInline'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62565}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62565/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b66551e67a378ddb32e428416d5ef12c
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -62,11 +82,8 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at pageObject.NextPages.Continuebutton(NextPages.java:88)
-at testCases.TC_03_Health_Insurance.HomePage(TC_03_Health_Insurance.java:24)
+at pageObject.Travel_Insurance.StartDate(Travel_Insurance.java:144)
+at testCases.TC_001_Student_Travel_Insurance.startdate(TC_001_Student_Travel_Insurance.java:66)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -100,159 +117,38 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HomePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_03_Health_Insurance@471a9022]" started-at="2024-02-21T12:08:59 IST" name="tearDown" finished-at="2024-02-21T12:08:59 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_03_Health_Insurance -->
-      <class name="testCases.TC_001_Student_Travel_Insurance">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@e25951c]" started-at="2024-02-21T12:06:13 IST" name="setup" finished-at="2024-02-21T12:06:32 IST" duration-ms="18985" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="homepage()[pri:1, instance:testCases.TC_001_Student_Travel_Insurance@e25951c]" started-at="2024-02-21T12:06:32 IST" name="homepage" finished-at="2024-02-21T12:06:32 IST" duration-ms="636" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homepage -->
-        <test-method signature="selcountry()[pri:2, instance:testCases.TC_001_Student_Travel_Insurance@e25951c]" started-at="2024-02-21T12:06:32 IST" name="selcountry" finished-at="2024-02-21T12:06:40 IST" duration-ms="7180" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selcountry -->
-        <test-method signature="Eurcountry()[pri:3, instance:testCases.TC_001_Student_Travel_Insurance@e25951c]" started-at="2024-02-21T12:06:40 IST" name="Eurcountry" finished-at="2024-02-21T12:06:41 IST" duration-ms="1151" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Eurcountry -->
-        <test-method signature="Next()[pri:4, instance:testCases.TC_001_Student_Travel_Insurance@e25951c]" started-at="2024-02-21T12:06:41 IST" name="Next" finished-at="2024-02-21T12:06:41 IST" duration-ms="460" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Next -->
-        <test-method signature="date()[pri:5, instance:testCases.TC_001_Student_Travel_Insurance@e25951c]" started-at="2024-02-21T12:06:41 IST" name="date" finished-at="2024-02-21T12:06:42 IST" duration-ms="753" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- date -->
-        <test-method signature="startdate()[pri:6, instance:testCases.TC_001_Student_Travel_Insurance@e25951c]" started-at="2024-02-21T12:06:42 IST" name="startdate" finished-at="2024-02-21T12:06:45 IST" duration-ms="2811" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found
-  (Session info: MicrosoftEdge=121.0.2277.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [c6dcdeec39cae9830cbbcea8afcbab4e, getElementText {id=8AB2D1EB864661900669DE4F9EBFD007_element_747}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.128, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61683}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61683/devtoo..., se:cdpVersion: 121.0.2277.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (c6dcdeec39cae9830cbbcea8afcbab4e)] -> xpath: //*[@class='MuiPickersDateRangeDay-root']]
-Session ID: c6dcdeec39cae9830cbbcea8afcbab4e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: MicrosoftEdge=121.0.2277.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [c6dcdeec39cae9830cbbcea8afcbab4e, getElementText {id=8AB2D1EB864661900669DE4F9EBFD007_element_747}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.128, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61683}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61683/devtoo..., se:cdpVersion: 121.0.2277.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (c6dcdeec39cae9830cbbcea8afcbab4e)] -> xpath: //*[@class='MuiPickersDateRangeDay-root']]
-Session ID: c6dcdeec39cae9830cbbcea8afcbab4e
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
-at pageObject.TravelInsurance.StartDate(TravelInsurance.java:148)
-at testCases.TC_001_Student_Travel_Insurance.startdate(TC_001_Student_Travel_Insurance.java:52)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- startdate -->
-        <test-method signature="lastdate()[pri:7, instance:testCases.TC_001_Student_Travel_Insurance@e25951c]" started-at="2024-02-21T12:06:45 IST" name="lastdate" finished-at="2024-02-21T12:06:45 IST" duration-ms="421" status="PASS">
+        <test-method signature="lastdate()[pri:7, instance:testCases.TC_001_Student_Travel_Insurance@1b410b60]" started-at="2024-02-21T17:54:47 IST" name="lastdate" finished-at="2024-02-21T17:54:47 IST" duration-ms="633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lastdate -->
-        <test-method signature="Countpeople()[pri:8, instance:testCases.TC_001_Student_Travel_Insurance@e25951c]" started-at="2024-02-21T12:06:45 IST" name="Countpeople" finished-at="2024-02-21T12:06:46 IST" duration-ms="707" status="PASS">
+        <test-method signature="Countpeople()[pri:8, instance:testCases.TC_001_Student_Travel_Insurance@1b410b60]" started-at="2024-02-21T17:54:47 IST" name="Countpeople" finished-at="2024-02-21T17:54:47 IST" duration-ms="264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Countpeople -->
-        <test-method signature="SelectAge()[pri:9, instance:testCases.TC_001_Student_Travel_Insurance@e25951c]" started-at="2024-02-21T12:06:46 IST" name="SelectAge" finished-at="2024-02-21T12:06:48 IST" duration-ms="1519" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SelectAge -->
-        <test-method signature="MedicalCondi()[pri:10, instance:testCases.TC_001_Student_Travel_Insurance@e25951c]" started-at="2024-02-21T12:06:48 IST" name="MedicalCondi" finished-at="2024-02-21T12:06:50 IST" duration-ms="2003" status="FAIL">
+        <test-method signature="SelectAge()[pri:9, instance:testCases.TC_001_Student_Travel_Insurance@1b410b60]" started-at="2024-02-21T17:54:47 IST" name="SelectAge" finished-at="2024-02-21T17:54:49 IST" duration-ms="1964" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <button disabled="" class="travel_main_cta">...</button> is not clickable at point (651, 437). Other element would receive the click: <div class="pqCtaWrapper">...</div>
-  (Session info: MicrosoftEdge=121.0.2277.128)
+              <![CDATA[element click intercepted: Element <button disabled="" class="travel_main_cta">...</button> is not clickable at point (759, 477). Other element would receive the click: <div class="pqCtaWrapper">...</div>
+  (Session info: chrome=120.0.6099.130)
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [c6dcdeec39cae9830cbbcea8afcbab4e, clickElement {id=8AB2D1EB864661900669DE4F9EBFD007_element_828}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.128, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61683}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61683/devtoo..., se:cdpVersion: 121.0.2277.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (c6dcdeec39cae9830cbbcea8afcbab4e)] -> xpath: //button[normalize-space()='Next']]
-Session ID: c6dcdeec39cae9830cbbcea8afcbab4e]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b66551e67a378ddb32e428416d5ef12c, clickElement {id=ED8C3D02D1FFACAA91EA24233F990FBE_element_640}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62565}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62565/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b66551e67a378ddb32e428416d5ef12c)] -> xpath: //button[normalize-space()='Next']]
+Session ID: b66551e67a378ddb32e428416d5ef12c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button disabled="" class="travel_main_cta">...</button> is not clickable at point (651, 437). Other element would receive the click: <div class="pqCtaWrapper">...</div>
-  (Session info: MicrosoftEdge=121.0.2277.128)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button disabled="" class="travel_main_cta">...</button> is not clickable at point (759, 477). Other element would receive the click: <div class="pqCtaWrapper">...</div>
+  (Session info: chrome=120.0.6099.130)
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [c6dcdeec39cae9830cbbcea8afcbab4e, clickElement {id=8AB2D1EB864661900669DE4F9EBFD007_element_828}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.128, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61683}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61683/devtoo..., se:cdpVersion: 121.0.2277.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (c6dcdeec39cae9830cbbcea8afcbab4e)] -> xpath: //button[normalize-space()='Next']]
-Session ID: c6dcdeec39cae9830cbbcea8afcbab4e
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b66551e67a378ddb32e428416d5ef12c, clickElement {id=ED8C3D02D1FFACAA91EA24233F990FBE_element_640}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62565}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62565/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b66551e67a378ddb32e428416d5ef12c)] -> xpath: //button[normalize-space()='Next']]
+Session ID: b66551e67a378ddb32e428416d5ef12c
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -273,8 +169,8 @@ at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegating
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at pageObject.TravelInsurance.MedicalCond(TravelInsurance.java:180)
-at testCases.TC_001_Student_Travel_Insurance.MedicalCondi(TC_001_Student_Travel_Insurance.java:82)
+at pageObject.Travel_Insurance.selectage(Travel_Insurance.java:196)
+at testCases.TC_001_Student_Travel_Insurance.SelectAge(TC_001_Student_Travel_Insurance.java:89)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -308,30 +204,108 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- SelectAge -->
+        <test-method signature="MedicalCondi()[pri:10, instance:testCases.TC_001_Student_Travel_Insurance@1b410b60]" started-at="2024-02-21T17:54:50 IST" name="MedicalCondi" finished-at="2024-02-21T17:55:00 IST" duration-ms="10165" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#ped_no"}
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b66551e67a378ddb32e428416d5ef12c, findElement {using=id, value=ped_no}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62565}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62565/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b66551e67a378ddb32e428416d5ef12c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#ped_no"}
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b66551e67a378ddb32e428416d5ef12c, findElement {using=id, value=ped_no}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62565}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62565/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b66551e67a378ddb32e428416d5ef12c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at pageObject.Travel_Insurance.MedicalCond(Travel_Insurance.java:201)
+at testCases.TC_001_Student_Travel_Insurance.MedicalCondi(TC_001_Student_Travel_Insurance.java:96)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- MedicalCondi -->
-        <test-method signature="phoneno()[pri:11, instance:testCases.TC_001_Student_Travel_Insurance@e25951c]" started-at="2024-02-21T12:06:50 IST" name="phoneno" finished-at="2024-02-21T12:07:00 IST" duration-ms="10081" status="FAIL">
+        <test-method signature="phoneno()[pri:11, instance:testCases.TC_001_Student_Travel_Insurance@1b410b60]" started-at="2024-02-21T17:55:00 IST" name="phoneno" finished-at="2024-02-21T17:55:10 IST" duration-ms="10031" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="mobileNumber"]"}
-  (Session info: MicrosoftEdge=121.0.2277.128)
+  (Session info: chrome=120.0.6099.130)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [c6dcdeec39cae9830cbbcea8afcbab4e, findElement {using=xpath, value=//*[@id="mobileNumber"]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.128, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61683}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61683/devtoo..., se:cdpVersion: 121.0.2277.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c6dcdeec39cae9830cbbcea8afcbab4e]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b66551e67a378ddb32e428416d5ef12c, findElement {using=xpath, value=//*[@id="mobileNumber"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62565}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62565/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b66551e67a378ddb32e428416d5ef12c]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="mobileNumber"]"}
-  (Session info: MicrosoftEdge=121.0.2277.128)
+  (Session info: chrome=120.0.6099.130)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [c6dcdeec39cae9830cbbcea8afcbab4e, findElement {using=xpath, value=//*[@id="mobileNumber"]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.128, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61683}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61683/devtoo..., se:cdpVersion: 121.0.2277.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c6dcdeec39cae9830cbbcea8afcbab4e
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b66551e67a378ddb32e428416d5ef12c, findElement {using=xpath, value=//*[@id="mobileNumber"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62565}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62565/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b66551e67a378ddb32e428416d5ef12c
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -351,8 +325,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
-at pageObject.TravelInsurance.PhoneNo(TravelInsurance.java:185)
-at testCases.TC_001_Student_Travel_Insurance.phoneno(TC_001_Student_Travel_Insurance.java:89)
+at pageObject.Travel_Insurance.PhoneNo(Travel_Insurance.java:207)
+at testCases.TC_001_Student_Travel_Insurance.phoneno(TC_001_Student_Travel_Insurance.java:103)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -387,29 +361,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- phoneno -->
-        <test-method signature="plans()[pri:12, instance:testCases.TC_001_Student_Travel_Insurance@e25951c]" started-at="2024-02-21T12:07:00 IST" name="plans" finished-at="2024-02-21T12:07:14 IST" duration-ms="14055" status="FAIL">
+        <test-method signature="plans()[pri:12, instance:testCases.TC_001_Student_Travel_Insurance@1b410b60]" started-at="2024-02-21T17:55:11 IST" name="plans" finished-at="2024-02-21T17:55:25 IST" duration-ms="14095" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class="filter_name_heading"]"}
-  (Session info: MicrosoftEdge=121.0.2277.128)
+  (Session info: chrome=120.0.6099.130)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [c6dcdeec39cae9830cbbcea8afcbab4e, findElement {using=xpath, value=//p[@class="filter_name_heading"]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.128, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61683}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61683/devtoo..., se:cdpVersion: 121.0.2277.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c6dcdeec39cae9830cbbcea8afcbab4e]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b66551e67a378ddb32e428416d5ef12c, findElement {using=xpath, value=//p[@class="filter_name_heading"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62565}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62565/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b66551e67a378ddb32e428416d5ef12c]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class="filter_name_heading"]"}
-  (Session info: MicrosoftEdge=121.0.2277.128)
+  (Session info: chrome=120.0.6099.130)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [c6dcdeec39cae9830cbbcea8afcbab4e, findElement {using=xpath, value=//p[@class="filter_name_heading"]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.128, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61683}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61683/devtoo..., se:cdpVersion: 121.0.2277.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c6dcdeec39cae9830cbbcea8afcbab4e
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b66551e67a378ddb32e428416d5ef12c, findElement {using=xpath, value=//p[@class="filter_name_heading"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62565}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62565/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b66551e67a378ddb32e428416d5ef12c
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -429,8 +403,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at pageObject.TravelInsurance.Plans(TravelInsurance.java:192)
-at testCases.TC_001_Student_Travel_Insurance.plans(TC_001_Student_Travel_Insurance.java:96)
+at pageObject.Travel_Insurance.Plans(Travel_Insurance.java:214)
+at testCases.TC_001_Student_Travel_Insurance.plans(TC_001_Student_Travel_Insurance.java:110)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -465,7 +439,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- plans -->
-        <test-method signature="plansdata()[pri:13, instance:testCases.TC_001_Student_Travel_Insurance@e25951c]" started-at="2024-02-21T12:07:15 IST" name="plansdata" finished-at="2024-02-21T12:07:25 IST" duration-ms="10035" status="FAIL">
+        <test-method signature="plansdata()[pri:13, instance:testCases.TC_001_Student_Travel_Insurance@1b410b60]" started-at="2024-02-21T17:55:25 IST" name="plansdata" finished-at="2024-02-21T17:55:35 IST" duration-ms="10077" status="FAIL">
           <exception class="java.lang.IndexOutOfBoundsException">
             <message>
               <![CDATA[Index 0 out of bounds for length 0]]>
@@ -483,8 +457,8 @@ at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegating
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
 at jdk.proxy2/jdk.proxy2.$Proxy16.get(Unknown Source)
-at pageObject.TravelInsurance.PlansData(TravelInsurance.java:199)
-at testCases.TC_001_Student_Travel_Insurance.plansdata(TC_001_Student_Travel_Insurance.java:103)
+at pageObject.Travel_Insurance.PlansData(Travel_Insurance.java:221)
+at testCases.TC_001_Student_Travel_Insurance.plansdata(TC_001_Student_Travel_Insurance.java:117)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -519,73 +493,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- plansdata -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@e25951c]" started-at="2024-02-21T12:07:25 IST" name="tearDown" finished-at="2024-02-21T12:07:25 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@1b410b60]" started-at="2024-02-21T17:55:36 IST" name="tearDown" finished-at="2024-02-21T17:55:36 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_001_Student_Travel_Insurance -->
-      <class name="testCases.TC_002_Car_Insurance">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_002_Car_Insurance@15f47664]" started-at="2024-02-21T12:07:25 IST" name="setup" finished-at="2024-02-21T12:08:00 IST" duration-ms="35464" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_linkOpen()[pri:0, instance:testCases.TC_002_Car_Insurance@15f47664]" started-at="2024-02-21T12:08:00 IST" name="verify_linkOpen" finished-at="2024-02-21T12:08:00 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_linkOpen -->
-        <test-method signature="verify_carIns_click()[pri:1, instance:testCases.TC_002_Car_Insurance@15f47664]" started-at="2024-02-21T12:08:00 IST" name="verify_carIns_click" finished-at="2024-02-21T12:08:02 IST" duration-ms="1446" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_carIns_click -->
-        <test-method signature="verify_buyNew_click()[pri:2, instance:testCases.TC_002_Car_Insurance@15f47664]" started-at="2024-02-21T12:08:02 IST" name="verify_buyNew_click" finished-at="2024-02-21T12:08:08 IST" duration-ms="5873" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_buyNew_click -->
-        <test-method signature="verify_city_click()[pri:3, instance:testCases.TC_002_Car_Insurance@15f47664]" started-at="2024-02-21T12:08:08 IST" name="verify_city_click" finished-at="2024-02-21T12:08:08 IST" duration-ms="437" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_city_click -->
-        <test-method signature="verify_rto_click()[pri:4, instance:testCases.TC_002_Car_Insurance@15f47664]" started-at="2024-02-21T12:08:08 IST" name="verify_rto_click" finished-at="2024-02-21T12:08:08 IST" duration-ms="344" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_rto_click -->
-        <test-method signature="verify_brand_click()[pri:5, instance:testCases.TC_002_Car_Insurance@15f47664]" started-at="2024-02-21T12:08:08 IST" name="verify_brand_click" finished-at="2024-02-21T12:08:09 IST" duration-ms="724" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_brand_click -->
-        <test-method signature="verify_model_click()[pri:6, instance:testCases.TC_002_Car_Insurance@15f47664]" started-at="2024-02-21T12:08:09 IST" name="verify_model_click" finished-at="2024-02-21T12:08:10 IST" duration-ms="700" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_model_click -->
-        <test-method signature="verify_varaint_click()[pri:7, instance:testCases.TC_002_Car_Insurance@15f47664]" started-at="2024-02-21T12:08:10 IST" name="verify_varaint_click" finished-at="2024-02-21T12:08:11 IST" duration-ms="1175" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_varaint_click -->
-        <test-method signature="sendDetails()[pri:8, instance:testCases.TC_002_Car_Insurance@15f47664]" started-at="2024-02-21T12:08:11 IST" name="sendDetails" finished-at="2024-02-21T12:08:12 IST" duration-ms="920" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sendDetails -->
-        <test-method signature="submit_click()[pri:9, instance:testCases.TC_002_Car_Insurance@15f47664]" started-at="2024-02-21T12:08:12 IST" name="submit_click" finished-at="2024-02-21T12:08:12 IST" duration-ms="509" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submit_click -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_002_Car_Insurance@15f47664]" started-at="2024-02-21T12:08:12 IST" name="tearDown" finished-at="2024-02-21T12:08:12 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_002_Car_Insurance -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
