@@ -17,7 +17,6 @@ public class TC_003_Health_Insurance extends BaseClass{
 			hp.Healthinsurance();
 		}
 	 catch (Exception e) {
-		// TODO Auto-generated catch block
 		e.printStackTrace();
 	 }
     	Health_Insurance Np= new Health_Insurance(driver);

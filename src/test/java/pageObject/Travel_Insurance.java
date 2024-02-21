@@ -18,7 +18,6 @@ public class Travel_Insurance extends BasePage{
     String[] datastr = new String[3];
 	public Travel_Insurance(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -43,51 +42,53 @@ public class Travel_Insurance extends BasePage{
 	@FindBy(xpath="//button[@class='MuiButtonBase-root MuiPickersDay-root MuiPickersDateRangeDay-day MuiPickersDateRangeDay-notSelectedDate MuiPickersDateRangeDay-dayOutsideRangeInterval']")
 	List<WebElement> Dates2;
 	
+	@FindBy(xpath="//div[normalize-space()='Start date']")
+		WebElement startDate;
+	
 	@FindBy(xpath="(//span[@class='MuiIconButton-label'])[4]")
 	WebElement NextMonth;
-	
-	
-	@FindBy(xpath="//div[normalize-space()='Start date']")
-	WebElement startDate;
-	
+		
 	@FindBy(xpath="//*[@class='memSelectRadioWrapper']/div[2]")
-	WebElement NoOfPerson;
+	WebElement NoOfStudent;
 	
-	@FindBy(xpath="//div[@class='options_box_wrapper']")
+	@FindBy(xpath="//div[@class='options_box_wrapper__option']")
 	List<WebElement> listOfAge;
 	
-	@FindBy(xpath="//*[@id='divarrow_undefined']")
-	WebElement ages;
+	@FindBy(xpath="//div[@id='0']")
+	WebElement selectAges;
 	
-	@FindBy(xpath="//*[@id=\"1\"]")
-	WebElement ages2;
+	@FindBy(xpath="//*[@id='1']")
+	WebElement selectAges2;
 	
-	
-	@FindBy(xpath="//*[@id='optionBox_0_wrapper']/div[24]/label")
-	WebElement age1;
-	
-	@FindBy(xpath="//*[@id='optionBox_1_wrapper']/div[23]/label")
-	WebElement age2;
 	@FindBy(id="ped_no")
-	WebElement mediCond;
-	@FindBy(xpath="//*[@id=\"mobileNumber\"]")
+	WebElement mediCondition;
+	
+	@FindBy(id="mobileNumber")
 	WebElement mobileNo;
-	@FindBy(xpath="//button[text()=\"View plans\"]")
-	WebElement viewplans;
-	@FindBy(xpath="//p[@class=\"filter_name_heading\"]")
-	WebElement sortby;
+	
+	@FindBy(xpath="//button[text()='View plans']")
+	WebElement viewPlans;
+	
+	@FindBy(xpath="//p[@class='filter_name_heading']")
+	WebElement sortBy;
+	
 	@FindBy(xpath="//input[@value='Premium low to high']")
 	WebElement LowToHigh;
+	
 	@FindBy(xpath="//p[@class='quotesCard--insurerName']")
 	List<WebElement> companyName;
+	
 	@FindBy(xpath="//span[@class='premiumPlanPrice']")
 	List<WebElement> Price;
 	
-	public void SelectCountry() throws InterruptedException {
+	
+	
+	
+	public void selectCountry() throws InterruptedException {
 		Country.click();
 	}
 	
-	public void Eurocountry() throws InterruptedException {
+	public void euroCountry() throws InterruptedException {
 
   		String Destination = "United Kingdom";
 		
@@ -100,12 +101,12 @@ public class Travel_Insurance extends BasePage{
 		
 	}
 	
-	public void NextPage() throws InterruptedException {
+	public void nextPage() throws InterruptedException {
 
 		Next.click();
 	}
 	
-	public void SelectDate() throws InterruptedException {
+	public void dateInput() throws InterruptedException {
 		
 		try {
 		startDate.click();
@@ -114,14 +115,14 @@ public class Travel_Insurance extends BasePage{
 		}
 	}
 	
-	public void StartDate() throws InterruptedException {
+	public void selectDateRange() throws InterruptedException {
 		
 		String month_year= "March 2024";
 		String startdate = "20";
 		String enddate="10";
 		String month_year1="June 2024";
 	
-	
+		try {
 		while(true) {
 			String month=super.driver.findElement(By.xpath("(//*[@class='MuiTypography-root MuiTypography-subtitle1 MuiTypography-displayInline'])[1]")).getText();
 			if(month.equals(month_year)) {
@@ -139,7 +140,10 @@ public class Travel_Insurance extends BasePage{
 				}
 			}
 		}
-		
+		}catch(Exception e) {
+			
+		}
+		try {
 		while(true) {
 			String month=super.driver.findElement(By.xpath("(//*[@class='MuiTypography-root MuiTypography-subtitle1 MuiTypography-displayInline'])[1]")).getText();
 			if(month.equals(month_year1)) {
@@ -157,27 +161,23 @@ public class Travel_Insurance extends BasePage{
 				}
 			}
 		}
+		}catch(Exception e) {
+			
+		}	
 		
 	}
+
 	
-	public void LastDate(WebDriver driver) throws InterruptedException {
+	public void noOfStudent() throws InterruptedException {
 		
-		Next.click();
+		NoOfStudent.click();
 	}
 	
-	public void countpeople() throws InterruptedException {
-		
-		NoOfPerson.click();
-	}
+	public void selectStudentAge() throws InterruptedException {
 	
-	public void selectage() throws InterruptedException {
+		String age1 = "22 years";
 	
-		String age1 = "22";
-		String age2 = "21";
-		
-		ages.click();
-		
-		
+		selectAges.click();
 		for(WebElement age:listOfAge) {
 			if(age.getText().equals(age1)) {
 				age.click();
@@ -185,7 +185,10 @@ public class Travel_Insurance extends BasePage{
 			}
 		}
 		
-		ages2.click();
+		
+		String age2 = "21 years";
+		
+		selectAges2.click();
 		for(WebElement age:listOfAge) {
 			if(age.getText().equals(age2)) {
 				age.click();
@@ -194,29 +197,30 @@ public class Travel_Insurance extends BasePage{
 		}
 		
 		Next.click();
+		
 	}
 	
-	public void MedicalCond() throws InterruptedException {
+	public void medicalCond() throws InterruptedException {
 	
-		mediCond.click();
+		mediCondition.click();
 		Next.click();
 	}
 	
-	public void PhoneNo() throws InterruptedException {
+	public void phoneNo() throws InterruptedException {
 		
 		mobileNo.sendKeys("9696682791");
-		viewplans.click();
+		viewPlans.click();
 	}
 	
-	public void Plans() throws InterruptedException {
+	public void plans() throws InterruptedException {
 		
 		Thread.sleep(4000);
-		sortby.click();
+		sortBy.click();
 		LowToHigh.click();
 		
 	}
 	
-	public void PlansData() throws InterruptedException, IOException{
+	public void plansData() throws InterruptedException, IOException{
 		for(int i=0;i<=2;i++) {
 			System.out.println(companyName.get(i).getText());
 			System.out.println(Price.get(i).getText());

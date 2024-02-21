@@ -84,7 +84,11 @@ public class Health_Insurance extends BasePage{
 	
 	public void Continuebutton() throws InterruptedException {
 		// TODO Auto-generated method stub
+		try {
 		Continue.click();
+		}catch(Exception e) {
+			Continue.click();
+		}
 	}
 	
 	public void SelectAge() throws InterruptedException {

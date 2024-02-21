@@ -39,7 +39,6 @@ public class BaseClass {
 			eOption.addArguments("--disable-blink-features=AutomationControlled");
 			Option.addArguments("--disable-notifications");
 			eOption.addArguments("--disable-notifications");
-//			driver=new ChromeDriver(option);
 			
 			FileReader file = new FileReader(".//src/test/resources/config.properties");
 			p=new Properties();
@@ -99,7 +98,7 @@ public class BaseClass {
 		
 		@AfterClass
 		public void tearDown() {
-//			driver.quit();
+			driver.quit();
 		}
 
 

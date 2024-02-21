@@ -10,27 +10,27 @@ import testBase.BaseClass;
 
 public class TC_001_Student_Travel_Insurance extends BaseClass{
 	
-	@Test(priority=1)
-	public void homepage() throws InterruptedException, IOException {
+	@Test
+	public void travel_insurance() throws InterruptedException, IOException {
 
 		HomePage hp=new HomePage(driver);
 		hp.travelinsurance();
 		
-//		Travel_Insurance Np=new Travel_Insurance(driver);
-//		Np.SelectCountry();
-//		Np.Eurocountry();
-//		Np.NextPage();
-//		Np.SelectDate();
-//		Np.StartDate();
-//		Np.NextPage();
-//		Np.countpeople();
-//		Np.selectage();
-//		Np.MedicalCond();
-//		Np.PhoneNo();
-//		Np.Plans();
-//		Np.PlansData();
+		Travel_Insurance Np=new Travel_Insurance(driver);
+		Np.selectCountry();
+		Np.euroCountry();
+		Np.nextPage();
+	    Np.dateInput();
+		Np.selectDateRange();
+		Np.nextPage();
+		Np.noOfStudent();
+		Np.selectStudentAge();
+		Np.medicalCond();
+		Np.phoneNo();
+		Np.plans();
+		Np.plansData();
 	}
-	
+	/*
 	@Test(priority=2)
 	public void selcountry() throws InterruptedException  {
 		
@@ -116,7 +116,7 @@ public class TC_001_Student_Travel_Insurance extends BaseClass{
 		Travel_Insurance Np=new Travel_Insurance(driver);
 		Np.PlansData();
 	}
-	
+	*/
 	
 
 }

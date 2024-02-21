@@ -1,8 +1,6 @@
 package testCases;
 
-import org.junit.Assert;
 import org.testng.annotations.Test;
-
 import pageObject.buyNew;
 import pageObject.HomePage;
 import pageObject.rto_city;
@@ -12,8 +10,7 @@ public class TC_002_Car_Insurance extends BaseClass  {
 
 	
 	@Test(priority=0)
-	public void verify_linkOpen ()  {
-		// TODO Auto-generated constructor stub
+	public void car_Insurance ()  {
 		
 
 	}
