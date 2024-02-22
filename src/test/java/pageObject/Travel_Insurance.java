@@ -43,7 +43,7 @@ public class Travel_Insurance extends BasePage{
 	List<WebElement> Dates2;
 	
 	@FindBy(xpath="//div[normalize-space()='Start date']")
-		WebElement startDate;
+	WebElement startDate;
 	
 	@FindBy(xpath="(//span[@class='MuiIconButton-label'])[4]")
 	WebElement NextMonth;
@@ -68,6 +68,16 @@ public class Travel_Insurance extends BasePage{
 	
 	@FindBy(xpath="//button[text()='View plans']")
 	WebElement viewPlans;
+	
+	@FindBy(id="studentTrip")
+	WebElement studentPlan;
+	
+	@FindBy(id="Traveller_1")
+	WebElement student1;
+	
+	@FindBy(id="Traveller_2")
+	WebElement student2;
+	
 	
 	@FindBy(xpath="//p[@class='filter_name_heading']")
 	WebElement sortBy;
@@ -210,6 +220,12 @@ public class Travel_Insurance extends BasePage{
 		
 		mobileNo.sendKeys("9696682791");
 		viewPlans.click();
+	}
+	
+	public void studentPlan() {
+		studentPlan.click();
+		student1.click();
+		student2.click();
 	}
 	
 	public void plans() throws InterruptedException {

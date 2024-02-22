@@ -16,7 +16,7 @@ public class Health_Insurance extends BasePage{
 	}
 	
 	
-	@FindBy(xpath="//*[@id=\"app\"]/div/div[1]/div[1]/form/section[1]/article/div[2]/div[1]/label")
+	@FindBy(xpath="//*[@id='app']/div/div[1]/div[1]/form/section[1]/article/div[2]/div[1]/label")
 	WebElement Self;
 	
 	@FindBy(xpath="//button[@id='step1ContinueBtn']")
@@ -31,7 +31,7 @@ public class Health_Insurance extends BasePage{
 	@FindBy(xpath="//button[@id='step2ContinueBtn']")
 	WebElement Button2;
 	
-	@FindBy(xpath="//input[@id='city']")
+	@FindBy(id="city")
 	WebElement Citypin;
 	
 	@FindBy(xpath="//li[normalize-space()='Pune']")
@@ -40,10 +40,10 @@ public class Health_Insurance extends BasePage{
 	@FindBy(xpath="//button[@id='step3ContinueBtn']")
 	WebElement Button3;
 	
-	@FindBy(xpath="//input[@id='fullName']")
+	@FindBy(id="fullName")
 	WebElement name;
 	
-	@FindBy(xpath="//input[@id='mobile']")
+	@FindBy(id="mobile")
 	WebElement mobilenum;
 	
 	@FindBy(xpath="//button[@id='step4ContinueBtn']")
@@ -67,9 +67,6 @@ public class Health_Insurance extends BasePage{
 	@FindBy(xpath="//button[normalize-space()='Apply']")
 	WebElement Applybut;
 	
-	/* @FindBy(xpath="//span[normalize-space()='Health QuBE Basic']")
-	WebElement HealthBasic; */
-	
 	@FindBy(xpath="//div[contains(@class,'quotes_rvmp_card segmentation_quoteCard')]")
 	List<WebElement> NoofItems;
 	
@@ -78,12 +75,12 @@ public class Health_Insurance extends BasePage{
 	
 	
 	public void SelectSelf() throws InterruptedException {
-		// TODO Auto-generated method stub
+		
 		Self.click();
 	}
 	
 	public void Continuebutton() throws InterruptedException {
-		// TODO Auto-generated method stub
+		
 		try {
 		Continue.click();
 		}catch(Exception e) {
@@ -92,27 +89,33 @@ public class Health_Insurance extends BasePage{
 	}
 	
 	public void SelectAge() throws InterruptedException {
-		// TODO Auto-generated method stub
+		
 		selAge.click();
 	}
 	
 	public void Ageyears() throws InterruptedException {
-		// TODO Auto-generated method stub
+		
 		age.click();
 	}
 	
 	public void Continuebutton2() throws InterruptedException {
-		// TODO Auto-generated method stub
+		
 		Button2.click();
 	}
 	
 	public void Citypincode() throws InterruptedException {
-		// TODO Auto-generated method stub
+		
+		Thread.sleep(2000);
 		Citypin.click();
 	}
 	public void SelectCity() throws InterruptedException{
-		City.click();
-		Thread.sleep(4000);
+		try {
+			City.click();
+			}catch(Exception e) {
+				City.click();
+			}
+		
+		
 	}
 	public void Continuebutton3() throws InterruptedException{
 		Button3.click();

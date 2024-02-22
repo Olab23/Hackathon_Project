@@ -25,7 +25,7 @@ public class TC_003_Health_Insurance extends BaseClass{
 	    	Thread.sleep(4000);
 	    	Np.Ageyears();
 	    	Np.Continuebutton2();
-	    	Np.Citypincode();
+//	    	Np.Citypincode();
 	    	Np.SelectCity();
 	    	Np.IntName();
 	    	Np.MobileNumber();

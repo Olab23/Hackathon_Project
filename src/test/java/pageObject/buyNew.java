@@ -15,7 +15,7 @@ public class buyNew extends BasePage {
 		PageFactory.initElements(driver, this);
 			}
 	
-	@FindBy(xpath= "//*[@id=\"before-tp\"]/div[2]/a")
+	@FindBy(xpath= "//*[@id='before-tp']/div[2]/a")
 	WebElement buynew;
 	
 	

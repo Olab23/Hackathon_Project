@@ -1,20 +1,31 @@
 package testCases;
 
 import org.testng.annotations.Test;
-import pageObject.buyNew;
+import pageObject.Car_Insurance;
 import pageObject.HomePage;
-import pageObject.rto_city;
 import testBase.BaseClass;
 
 public class TC_002_Car_Insurance extends BaseClass  {
 
 	
-	@Test(priority=0)
+	@Test
 	public void car_Insurance ()  {
 		
-
+		HomePage hm = new HomePage(driver);
+		hm.Carinsurance();
+		
+		Car_Insurance rc = new Car_Insurance(driver);
+		rc.buynew();
+		rc.city_click();
+		rc.rto_click();
+		rc.carbrand_click();
+		rc.carModel_click();
+		rc.carVariant_click();
+		rc.send_Details();
+		rc.print_error();
 	}
 
+	/*
 	@Test(priority=1)
 	public void verify_carIns_click() {
 		HomePage hm = new HomePage(driver);
@@ -74,7 +85,7 @@ public class TC_002_Car_Insurance extends BaseClass  {
 		rto_city rc = new rto_city(driver);
 		rc.print_error();
 	}
-	
+	*/
 	
 	
 	

@@ -1,9 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-21T23:43:13 IST" name="Suite" finished-at="2024-02-21T23:43:13 IST" duration-ms="0">
+  <suite started-at="2024-02-22T15:01:39 IST" name="Suite" finished-at="2024-02-22T15:06:49 IST" duration-ms="310295">
     <groups>
     </groups>
+    <test started-at="2024-02-22T15:01:39 IST" name="Test" finished-at="2024-02-22T15:06:49 IST" duration-ms="310295">
+      <class name="testCases.TC_003_Health_Insurance">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_003_Health_Insurance@35a3d49f]" started-at="2024-02-22T15:05:07 IST" name="setup" finished-at="2024-02-22T15:05:51 IST" duration-ms="44104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="HomePage()[pri:0, instance:testCases.TC_003_Health_Insurance@35a3d49f]" started-at="2024-02-22T15:05:51 IST" name="HomePage" finished-at="2024-02-22T15:06:49 IST" duration-ms="57862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_003_Health_Insurance@35a3d49f]" started-at="2024-02-22T15:06:49 IST" name="tearDown" finished-at="2024-02-22T15:06:49 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_003_Health_Insurance -->
+      <class name="testCases.TC_001_Student_Travel_Insurance">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@51bf5add]" started-at="2024-02-22T15:01:40 IST" name="setup" finished-at="2024-02-22T15:02:34 IST" duration-ms="54762" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="travel_insurance()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@51bf5add]" started-at="2024-02-22T15:02:35 IST" name="travel_insurance" finished-at="2024-02-22T15:03:35 IST" duration-ms="60692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- travel_insurance -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@51bf5add]" started-at="2024-02-22T15:03:35 IST" name="tearDown" finished-at="2024-02-22T15:03:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_001_Student_Travel_Insurance -->
+      <class name="testCases.TC_002_Car_Insurance">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_002_Car_Insurance@7905a0b8]" started-at="2024-02-22T15:03:35 IST" name="setup" finished-at="2024-02-22T15:04:29 IST" duration-ms="53957" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="car_Insurance()[pri:0, instance:testCases.TC_002_Car_Insurance@7905a0b8]" started-at="2024-02-22T15:04:29 IST" name="car_Insurance" finished-at="2024-02-22T15:05:07 IST" duration-ms="37579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- car_Insurance -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_002_Car_Insurance@7905a0b8]" started-at="2024-02-22T15:05:07 IST" name="tearDown" finished-at="2024-02-22T15:05:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_002_Car_Insurance -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
