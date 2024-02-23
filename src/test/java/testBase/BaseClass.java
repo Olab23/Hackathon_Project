@@ -29,6 +29,7 @@ public class BaseClass {
 	public Properties p;
 		
 		@SuppressWarnings("deprecation")
+		
 		@BeforeClass
 		@Parameters({"os", "browser"})
 		public void setup(String os, String br) throws IOException {

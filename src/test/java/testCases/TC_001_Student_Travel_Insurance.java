@@ -27,6 +27,7 @@ public class TC_001_Student_Travel_Insurance extends BaseClass{
 		Np.selectStudentAge();
 		Np.medicalCond();
 		Np.phoneNo();
+		Np.studentPlan();
 		Np.plans();
 		Np.plansData();
 	}

@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 //import utilities.Apache;
 
@@ -78,6 +79,11 @@ public class Travel_Insurance extends BasePage{
 	@FindBy(id="Traveller_2")
 	WebElement student2;
 	
+	@FindBy(id="feet")
+	WebElement dropDown;
+	
+	@FindBy(xpath="//button[normalize-space()='Apply']")
+	WebElement apply;
 	
 	@FindBy(xpath="//p[@class='filter_name_heading']")
 	WebElement sortBy;
@@ -222,10 +228,15 @@ public class Travel_Insurance extends BasePage{
 		viewPlans.click();
 	}
 	
-	public void studentPlan() {
+	public void studentPlan() throws InterruptedException {
 		studentPlan.click();
+		Thread.sleep(3000);
 		student1.click();
 		student2.click();
+		Select drpDays = new Select(dropDown);
+		drpDays.selectByVisibleText("30 Days");
+		apply.click();
+		
 	}
 	
 	public void plans() throws InterruptedException {
