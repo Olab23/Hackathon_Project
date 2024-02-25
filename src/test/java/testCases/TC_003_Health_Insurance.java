@@ -1,5 +1,7 @@
 package testCases;
 
+import java.io.IOException;
+
 import org.testng.annotations.Test;
 
 import pageObject.Health_Insurance;
@@ -10,7 +12,7 @@ public class TC_003_Health_Insurance extends BaseClass{
 
 
     @Test
-    public void HomePage() throws InterruptedException {
+    public void HomePage() throws InterruptedException, IOException {
     	try {
     		
 			HomePage hp=new HomePage(driver);
@@ -25,7 +27,6 @@ public class TC_003_Health_Insurance extends BaseClass{
 	    	Thread.sleep(4000);
 	    	Np.Ageyears();
 	    	Np.Continuebutton2();
-//	    	Np.Citypincode();
 	    	Np.SelectCity();
 	    	Np.IntName();
 	    	Np.MobileNumber();

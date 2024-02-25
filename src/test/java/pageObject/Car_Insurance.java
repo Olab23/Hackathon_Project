@@ -16,7 +16,7 @@ public class Car_Insurance extends BasePage {
 			}
 	
 	
-	@FindBy(xpath= "//*[@id='before-tp']/div[2]/a")
+	@FindBy(xpath= "//a[@class='btn-proceed']")
 	WebElement buynew;
 	
 	@FindBy(id="spn4")

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 23 15:03:41 IST 2024</td>
+<td>Started on:</td><td>Sun Feb 25 22:36:55 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>125 seconds (125051 ms)</td>
+<tr><td>Total time:</td><td>46 seconds (46064 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,10 +76,64 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.TC_001_Student_Travel_Insurance.travel_insurance()'><b>travel_insurance</b><br>Test class: testCases.TC_001_Student_Travel_Insurance</td>
-<td></td>
-<td>64</td>
-<td>testCases.TC_001_Student_Travel_Insurance@72d6b3ba</td></tr>
+<td title='testCases.TC_003_Health_Insurance.HomePage()'><b>HomePage</b><br>Test class: testCases.TC_003_Health_Insurance</td>
+<td><div><pre>java.lang.AbstractMethodError: Receiver class org.apache.xerces.jaxp.DocumentBuilderFactoryImpl does not define or inherit an implementation of the resolved method &apos;abstract void setFeature(java.lang.String, boolean)&apos; of abstract class javax.xml.parsers.DocumentBuilderFactory.
+	at org.apache.poi.util.XMLHelper.trySet(XMLHelper.java:282)
+	at org.apache.poi.util.XMLHelper.getDocumentBuilderFactory(XMLHelper.java:113)
+	at org.apache.poi.util.XMLHelper.&lt;clinit&gt;(XMLHelper.java:85)
+	at org.apache.poi.ooxml.util.DocumentHelper.newDocumentBuilder(DocumentHelper.java:47)
+	at org.apache.poi.ooxml.util.DocumentHelper.&lt;clinit&gt;(DocumentHelper.java:36)
+	at org.apache.poi.openxml4j.opc.internal.ContentTypeManager.save(ContentTypeManager.java:429)
+	at org.apache.poi.openxml4j.opc.ZipPackage.saveImpl(ZipPackage.java:608)
+	at org.apache.poi.openxml4j.opc.OPCPackage.save(OPCPackage.java:1532)
+	at org.apache.poi.ooxml.POIXMLDocument.write(POIXMLDocument.java:227)
+	at utilities.ExcelUtility.excelHI(ExcelUtility.java:79)
+	at pageObject.Health_Insurance.ListInfo(Health_Insurance.java:193)
+	at testCases.TC_003_Health_Insurance.HomePage(TC_003_Health_Insurance.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1104938392", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1104938392'><pre>java.lang.AbstractMethodError: Receiver class org.apache.xerces.jaxp.DocumentBuilderFactoryImpl does not define or inherit an implementation of the resolved method &apos;abstract void setFeature(java.lang.String, boolean)&apos; of abstract class javax.xml.parsers.DocumentBuilderFactory.
+	at org.apache.poi.util.XMLHelper.trySet(XMLHelper.java:282)
+	at org.apache.poi.util.XMLHelper.getDocumentBuilderFactory(XMLHelper.java:113)
+	at org.apache.poi.util.XMLHelper.&lt;clinit&gt;(XMLHelper.java:85)
+	at org.apache.poi.ooxml.util.DocumentHelper.newDocumentBuilder(DocumentHelper.java:47)
+	at org.apache.poi.ooxml.util.DocumentHelper.&lt;clinit&gt;(DocumentHelper.java:36)
+	at org.apache.poi.openxml4j.opc.internal.ContentTypeManager.save(ContentTypeManager.java:429)
+	at org.apache.poi.openxml4j.opc.ZipPackage.saveImpl(ZipPackage.java:608)
+	at org.apache.poi.openxml4j.opc.OPCPackage.save(OPCPackage.java:1532)
+	at org.apache.poi.ooxml.POIXMLDocument.write(POIXMLDocument.java:227)
+	at utilities.ExcelUtility.excelHI(ExcelUtility.java:79)
+	at pageObject.Health_Insurance.ListInfo(Health_Insurance.java:193)
+	at testCases.TC_003_Health_Insurance.HomePage(TC_003_Health_Insurance.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>39</td>
+<td>testCases.TC_003_Health_Insurance@78123e82</td></tr>
 </table><p>
 </body>
 </html>

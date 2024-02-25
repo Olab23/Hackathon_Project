@@ -14,138 +14,83 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import pageObject.Health_Insurance;
+import pageObject.Travel_Insurance;
+
 public class ExcelUtility {
 	
-	public FileInputStream fi;
-	public FileOutputStream fo;
-	public XSSFWorkbook workbook;
-	public XSSFSheet sheet;
-	public XSSFRow row;
-	public XSSFCell cell;
-	public CellStyle style;   
-	String path;
-	
-	public ExcelUtility(String path)
-	{
-		this.path=path;
-	}
+	public static void excelTI() throws IOException {
+		FileOutputStream file=new FileOutputStream(System.getProperty("user.dir")+"\\excelFile\\output.xlsx");
+		XSSFWorkbook workbook=new XSSFWorkbook();
+		XSSFSheet sheet=workbook.createSheet("sheet1");
+		XSSFRow row=sheet.createRow(0);
+		XSSFCell cell=row.createCell(0);
+		cell.setCellValue("Companay Provider Name");
+		row.createCell(1).setCellValue("Package Name");
+		row.createCell(2).setCellValue("Price");
+		for(int i=1; i<=Travel_Insurance.company.size();i++ ) {
+			XSSFRow r=sheet.createRow(i);
+			r.createCell(0).setCellValue(Travel_Insurance.company.get(i-1));
+			r.createCell(1).setCellValue(Travel_Insurance.name.get(i-1));
+			r.createCell(2).setCellValue(Travel_Insurance.prices.get(i-1));
+ 
 		
-	public int getRowCount(String sheetName) throws IOException 
-	{
-		fi=new FileInputStream(path);
-		workbook=new XSSFWorkbook(fi);
-		sheet=workbook.getSheet(sheetName);
-		int rowcount=sheet.getLastRowNum();
-		workbook.close();
-		fi.close();
-		return rowcount;		
-	}
-	
-	public int getCellCount(String sheetName,int rownum) throws IOException
-	{
-		fi=new FileInputStream(path);
-		workbook=new XSSFWorkbook(fi);
-		sheet=workbook.getSheet(sheetName);
-		row=sheet.getRow(rownum);
-		int cellcount=row.getLastCellNum();
-		workbook.close();
-		fi.close();
-		return cellcount;
-	}
-	
-	
-	public String getCellData(String sheetName,int rownum,int colnum) throws IOException
-	{
-		fi=new FileInputStream(path);
-		workbook=new XSSFWorkbook(fi);
-		sheet=workbook.getSheet(sheetName);
-		row=sheet.getRow(rownum);
-		cell=row.getCell(colnum);
-		
-		DataFormatter formatter = new DataFormatter();
-		String data;
-		try{
-		data = formatter.formatCellValue(cell); //Returns the formatted value of a cell as a String regardless of the cell type.
 		}
-		catch(Exception e)
-		{
-			data="";
+//		XSSFSheet sheet1=workbook.createSheet("sheet2");
+//		XSSFRow nrow=sheet1.createRow(0);
+//		XSSFCell ncell=nrow.createCell(0);
+//		ncell.setCellValue("Health Insurance List");
+//		for(int i=1; i<=Health_Insurance.allHealthList.size();i++ ) {
+//			XSSFRow ro=sheet1.createRow(i);
+//			ro.createCell(0).setCellValue(Health_Insurance.allHealthList.get(i-1));
+//		}
+		workbook.write(file);
+		workbook.close();
+		file.close();
+
+ 
+	}
+	
+	public static void excelHI() throws IOException {
+		FileOutputStream file=new FileOutputStream(System.getProperty("user.dir")+"\\excelFile\\output2.xlsx");
+		XSSFWorkbook workbook=new XSSFWorkbook();
+//		XSSFSheet sheet=workbook.createSheet("sheet1");
+//		XSSFRow row=sheet.createRow(0);
+//		XSSFCell cell=row.createCell(0);
+//		cell.setCellValue("Companay Provider Name");
+//		row.createCell(1).setCellValue("Package Name");
+//		row.createCell(2).setCellValue("Price");
+//		for(int i=1; i<=Travel_Insurance.company.size();i++ ) {
+//			XSSFRow r=sheet.createRow(i);
+//			r.createCell(0).setCellValue(Travel_Insurance.company.get(i-1));
+//			r.createCell(1).setCellValue(Travel_Insurance.name.get(i-1));
+//			r.createCell(2).setCellValue(Travel_Insurance.prices.get(i-1));
+// 
+//		
+//		}
+		XSSFSheet sheet1=workbook.createSheet("sheet1");
+		XSSFRow nrow=sheet1.createRow(0);
+		XSSFCell ncell=nrow.createCell(0);
+		ncell.setCellValue("Health Insurance List");
+		for(int i=1; i<=Health_Insurance.allHealthList.size();i++ ) {
+			XSSFRow ro=sheet1.createRow(i);
+			ro.createCell(0).setCellValue(Health_Insurance.allHealthList.get(i-1));
 		}
+		workbook.write(file);
 		workbook.close();
-		fi.close();
-		return data;
-	}
-	
-	public void setCellData(String sheetName,int rownum,int colnum,String data) throws IOException
-	{
-		File xlfile=new File(path);
-		if(!xlfile.exists())    // If file not exists then create new file
-		{
-		workbook=new XSSFWorkbook();
-		fo=new FileOutputStream(path);
-		workbook.write(fo);
-		}
-				
-		fi=new FileInputStream(path);
-		workbook=new XSSFWorkbook(fi);
-			
-		if(workbook.getSheetIndex(sheetName)==-1) // If sheet not exists then create new Sheet
-			workbook.createSheet(sheetName);
-		sheet=workbook.getSheet(sheetName);
-					
-		if(sheet.getRow(rownum)==null)   // If row not exists then create new Row
-				sheet.createRow(rownum);
-		row=sheet.getRow(rownum);
-		
-		cell=row.createCell(colnum);
-		cell.setCellValue(data);
-		fo=new FileOutputStream(path);
-		workbook.write(fo);		
-		workbook.close();
-		fi.close();
-		fo.close();
+		file.close();
+
+ 
 	}
 	
 	
-	public void fillGreenColor(String sheetName,int rownum,int colnum) throws IOException
-	{
-		fi=new FileInputStream(path);
-		workbook=new XSSFWorkbook(fi);
-		sheet=workbook.getSheet(sheetName);
-		
-		row=sheet.getRow(rownum);
-		cell=row.getCell(colnum);
-		
-		style=workbook.createCellStyle();
-		
-		style.setFillForegroundColor(IndexedColors.GREEN.getIndex());
-		style.setFillPattern(FillPatternType.SOLID_FOREGROUND); 
-				
-		cell.setCellStyle(style);
-		workbook.write(fo);
-		workbook.close();
-		fi.close();
-		fo.close();
-	}
-	
-	
-	public void fillRedColor(String sheetName,int rownum,int colnum) throws IOException
-	{
-		fi=new FileInputStream(path);
-		workbook=new XSSFWorkbook(fi);
-		sheet=workbook.getSheet(sheetName);
-		row=sheet.getRow(rownum);
-		cell=row.getCell(colnum);
-		
-		style=workbook.createCellStyle();
-		
-		style.setFillForegroundColor(IndexedColors.RED.getIndex());
-		style.setFillPattern(FillPatternType.SOLID_FOREGROUND);  
-		
-		cell.setCellStyle(style);		
-		workbook.write(fo);
-		workbook.close();
-		fi.close();
-		fo.close();
-	}
+	//Read Data
+//	public static String readExcel(int row) throws Exception {
+//		FileInputStream file=new FileInputStream(System.getProperty("user.dir")+"\\excelfile\\inputexcel.xlsx");
+//		XSSFWorkbook workbook=new XSSFWorkbook(file);
+//		XSSFSheet sheet=workbook.getSheet("Sheet1");
+//		String ab=sheet.getRow(row).getCell(0).toString();
+//		return ab;
+//	}
+
 }

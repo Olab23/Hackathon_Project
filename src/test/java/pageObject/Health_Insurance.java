@@ -1,15 +1,22 @@
 package pageObject;
 
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import utilities.ExcelUtility;
 public class Health_Insurance extends BasePage{
    
 	WebDriver driver;
-    String[] datastr = new String[3];
+//	JavascriptExecutor js=(JavascriptExecutor)driver;
+	public static List<String> allHealthList=new ArrayList<String>();
+ 
 	public Health_Insurance(WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(driver, this);
@@ -67,8 +74,14 @@ public class Health_Insurance extends BasePage{
 	@FindBy(xpath="//button[normalize-space()='Apply']")
 	WebElement Applybut;
 	
-	@FindBy(xpath="//div[contains(@class,'quotes_rvmp_card segmentation_quoteCard')]")
-	List<WebElement> NoofItems;
+	@FindBy(xpath="//span[@class='quotes_more_plans more ']")
+	List<WebElement> allButton;
+
+	@FindBy(className="quotes_rvmp_card__content__plan_header__name")
+	List<WebElement> allHealthInSuMenu;
+	
+//	@FindBy(xpath="//div[contains(@class,'quotes_rvmp_card segmentation_quoteCard')]")
+//	List<WebElement> NoofItems;
 	
 	
 	
@@ -155,11 +168,31 @@ public class Health_Insurance extends BasePage{
 	public void Application() throws InterruptedException{
 	  Applybut.click();
 	}
-	public void ListInfo() {
-	for(WebElement a:NoofItems)	{
-		System.out.println(a.getText());
+	public void ListInfo() throws InterruptedException, IOException {
+//	for(WebElement a:NoofItems)	{
+//		System.out.println(a.getText());
+////	}
+//		JavascriptExecutor jse=(JavascriptExecutor)super.driver;
+//		for(int j=0; j<allButton.size(); j++) {
+//			jse.executeScript("arguments[0].scrollIntoView()",allButton.get(j));
+//			jse.executeScript("arguments[0].click();",allButton.get(j));
+//			Thread.sleep(1000);
+//		}
+ 
+		
+		System.out.println("Number of package Available: "+allHealthInSuMenu.size());
+		for(int i=0; i<allHealthInSuMenu.size(); i++) {
+			allHealthList.add(allHealthInSuMenu.get(i).getText());
+
+		}
+		System.out.println("-------------Health Insurance List-------------- ");
+		for(int k=0; k<allHealthInSuMenu.size(); k++) {
+
+			System.out.println(allHealthList.get(k));
+		}
+		ExcelUtility.excelHI();
 	}
-	}
+	
 }
 	
 

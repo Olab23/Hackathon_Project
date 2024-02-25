@@ -33,11 +33,6 @@ public class ExtentReportManager implements ITestListener {
 
 	public void onStart(ITestContext testContext) {
 		
-		/*SimpleDateFormat df=new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
-		Date dt=new Date();
-		String currentdatetimestamp=df.format(dt);
-		*/
-		
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
 		repName = "Test-Report-" + timeStamp + ".html";
 		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);// specify location of the report
@@ -71,6 +66,8 @@ public class ExtentReportManager implements ITestListener {
 		test = extent.createTest(result.getTestClass().getName());
 		test.assignCategory(result.getMethod().getGroups()); // to display groups in report
 		test.log(Status.PASS,result.getName()+" got successfully executed");
+		String imgPath = new BaseClass().captureScreen(result.getName());
+		test.addScreenCaptureFromPath(imgPath);
 		
 	}
 
