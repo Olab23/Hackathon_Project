@@ -106,6 +106,9 @@ public class Travel_Insurance extends BasePage{
 	@FindBy(xpath="//span[@class='premiumPlanPrice']")
 	List<WebElement> price;
 	
+	@FindBy(xpath="//*[@id=\"root\"]/div/header/article/h1/a")
+	 WebElement logoClick;
+	
 	
 	
 	
@@ -270,5 +273,10 @@ public class Travel_Insurance extends BasePage{
 		 
 		 ExcelUtility.excel();
 		
+		 
+	}
+	
+	public void logoClick() {
+    	logoClick.click();
 	}
 }

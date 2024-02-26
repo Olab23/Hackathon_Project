@@ -15,6 +15,26 @@
           <include name="setup"/>
         </methods>
       </class> <!-- testCases.TC_003_Health_Insurance -->
+      <class name="testBase.BaseClass">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testBase.BaseClass -->
+      <class name="testCases.TC_002_Car_Insurance">
+        <methods>
+          <include name="tearDown"/>
+          <include name="car_Insurance"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC_002_Car_Insurance -->
+      <class name="testCases.TC_001_Student_Travel_Insurance">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="travel_insurance"/>
+        </methods>
+      </class> <!-- testCases.TC_001_Student_Travel_Insurance -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

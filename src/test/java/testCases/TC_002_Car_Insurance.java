@@ -11,30 +11,40 @@ public class TC_002_Car_Insurance extends BaseClass  {
 	
 	@Test
 	public void car_Insurance () throws Exception  {
-		
+		logger.info("**** starting TC_002_Car_Insurance  *****");
 		HomePage hm = new HomePage(driver);
 		hm.Carinsurance();
 		
 		Car_Insurance rc = new Car_Insurance(driver);
+		logger.info("Buying new car.. ");
 		rc.buyCar();
+		logger.info("Search RTO.. ");
 		rc.getSearchRto();
+		logger.info("Selecting city.. ");
 		rc.selectCityOption();
+		logger.info("Selecting car details.. ");
 		rc.selectCarOption();
 		rc.carModelOption();
 		rc.fuelTypeOption();
 		rc.carVariantOption();
 		rc.carVariantMode();
+		logger.info("Entering customer details.. ");
 		rc.getName(ExcelUtility.readExcel(1));
 		rc.getEmail(ExcelUtility.readExcel(2));
-		rc.getMobilNo("9806771209");
+		rc.getMobilNo(ExcelUtility.readExcel(0));
+		logger.info("Capturing Error msg.. ");
 		rc.getErrorMessage();
 		rc.clearEmail();
+		logger.info("Entering correct email.. ");
 		rc.correctEmail(ExcelUtility.readExcel(3));
 		rc.viewButton();
 		rc.getDeliveryDate();
 		rc.getCarNo();
 		rc.view();
+		logger.info("Getting Car quote.. ");
 		rc.getQuote();
+		
+		logger.info("**** finished TC_002_Car_Insurance  *****");
 	}
 
 	/*

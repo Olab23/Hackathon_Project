@@ -14,6 +14,7 @@ public class TC_003_Health_Insurance extends BaseClass{
 
     @Test
     public void HomePage() throws Exception {
+    	logger.info("**** starting TC_003_Health_Insurance  *****");
     	try {
     		
 			HomePage hp=new HomePage(driver);
@@ -24,6 +25,7 @@ public class TC_003_Health_Insurance extends BaseClass{
 	 }
     	Health_Insurance Np= new Health_Insurance(driver);
 			Np.Continuebutton();
+			logger.info("Selecting .. ");
 			Np.SelectAge();
 	    	Thread.sleep(4000);
 	    	Np.Ageyears();
@@ -39,6 +41,7 @@ public class TC_003_Health_Insurance extends BaseClass{
 	    	Np.SelLowtoHigh();
 	    	Np.Application();
 	    	Np.ListInfo();
+	    	logger.info("**** finished TC_003_Health_Insurance  *****");
     	}
 	}
     

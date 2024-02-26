@@ -13,24 +13,33 @@ public class TC_001_Student_Travel_Insurance extends BaseClass{
 	
 	@Test
 	public void travel_insurance() throws Exception {
-
+		
+		logger.info("**** starting TC_001_TravelDetails  *****");
 		HomePage hp=new HomePage(driver);
+		logger.info("Opening of Travel Insurance Page ");
 		hp.travelinsurance();
 		
 		Travel_Insurance Np=new Travel_Insurance(driver);
 		Np.selectCountry();
+		logger.info("Entering customer details.. ");
 		Np.euroCountry();
 		Np.nextPage();
+		logger.info("clicked on continue..");
 	    Np.dateInput();
 		Np.selectDateRange();
 		Np.nextPage();
+		logger.info("Select Student...");
 		Np.noOfStudent();
 		Np.selectStudentAge();
 		Np.medicalCond();
 		Np.phoneNo(ExcelUtility.readExcel(0));
+		logger.info("Select Student Plan...");
 		Np.studentPlan();
 		Np.plans();
 		Np.plansData();
+		Np.logoClick();
+		logger.info("**** finished TC_001_TravelDetails  *****");
+		
 	}
 	/*
 	@Test(priority=2)

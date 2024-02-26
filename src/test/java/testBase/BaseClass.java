@@ -9,6 +9,8 @@ import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
@@ -26,6 +28,7 @@ import org.testng.annotations.Parameters;
 public class BaseClass {
 	
 	static public WebDriver driver;
+	public Logger logger;
 	public Properties p;
 		
 		@SuppressWarnings("deprecation")
@@ -33,6 +36,8 @@ public class BaseClass {
 		@BeforeClass
 		@Parameters({"os", "browser"})
 		public void setup(String os, String br) throws IOException {
+			
+			logger=LogManager.getLogger(this.getClass());
 			
 			ChromeOptions Option = new ChromeOptions();
 			EdgeOptions eOption = new EdgeOptions();
@@ -83,9 +88,10 @@ public class BaseClass {
 			//launching browser based on condition - locally
 			switch(br.toLowerCase())
 			{
-			case "chrome": driver=new ChromeDriver(Option); break;
-			case "edge": driver=new EdgeDriver(eOption); break;
-			default: System.out.println("No matching browser..");
+			case "chrome": driver=new ChromeDriver(Option); logger.info("Chrome browser opened successfully"); break;
+			case "edge": driver=new EdgeDriver(eOption); logger.info("Chrome browser opened successfully"); break;
+			default: System.out.println("No matching browser.."); logger.info("no matching browser......");
+						
 						return;
 			}
 		}
@@ -99,7 +105,7 @@ public class BaseClass {
 		
 		@AfterClass
 		public void tearDown() {
-//			driver.quit();
+			driver.quit();
 		}
 
 

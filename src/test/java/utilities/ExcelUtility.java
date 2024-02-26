@@ -28,6 +28,7 @@ public class ExcelUtility {
 			return ab;
 		
 	}
+	
 	//Write Data
 	public static void excel() throws IOException {
 		
@@ -45,7 +46,6 @@ public class ExcelUtility {
 			r.createCell(0).setCellValue(Travel_Insurance.company.get(i-1));
 			r.createCell(1).setCellValue(Travel_Insurance.name.get(i-1));
 			r.createCell(2).setCellValue(Travel_Insurance.prices.get(i-1));
-
 		}
 		
 		

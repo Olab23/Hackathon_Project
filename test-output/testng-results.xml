@@ -1,88 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-26T14:33:09 IST" name="Suite" finished-at="2024-02-26T14:40:35 IST" duration-ms="445927">
+  <suite started-at="2024-02-26T16:34:24 IST" name="Suite" finished-at="2024-02-26T16:34:25 IST" duration-ms="963">
     <groups>
     </groups>
-    <test started-at="2024-02-26T14:33:09 IST" name="Test" finished-at="2024-02-26T14:40:35 IST" duration-ms="445927">
-      <class name="testCases.TC_003_Health_Insurance">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_003_Health_Insurance@5386659f]" started-at="2024-02-26T14:37:42 IST" name="setup" finished-at="2024-02-26T14:38:21 IST" duration-ms="39011" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2024-02-26T16:34:24 IST" name="Test" finished-at="2024-02-26T16:34:25 IST" duration-ms="963">
+      <class name="testBase.BaseClass">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testBase.BaseClass@5e2c3d18]" started-at="2024-02-26T16:34:24 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1708945464068" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'os' is required by BeforeSuite on method setup but has not been marked @Optional or defined
+in C:\Users\2303651\eclipse-workspace\Hackathon_Policy_Bazar\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'os' is required by BeforeSuite on method setup but has not been marked @Optional or defined
+in C:\Users\2303651\eclipse-workspace\Hackathon_Policy_Bazar\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:693)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="HomePage()[pri:0, instance:testCases.TC_003_Health_Insurance@5386659f]" started-at="2024-02-26T14:38:21 IST" name="HomePage" finished-at="2024-02-26T14:40:34 IST" duration-ms="133029" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testBase.BaseClass@5e2c3d18]" started-at="2024-02-26T16:34:38 IST" name="tearDown" finished-at="2024-02-26T16:34:38 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testBase.BaseClass -->
+      <class name="testCases.TC_003_Health_Insurance">
+        <test-method signature="HomePage()[pri:0, instance:testCases.TC_003_Health_Insurance@7ce026d3]" started-at="2024-02-26T16:34:25 IST" name="HomePage" finished-at="2024-02-26T16:34:25 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'os' is required by BeforeSuite on method setup but has not been marked @Optional or defined
+in C:\Users\2303651\eclipse-workspace\Hackathon_Policy_Bazar\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'os' is required by BeforeSuite on method setup but has not been marked @Optional or defined
+in C:\Users\2303651\eclipse-workspace\Hackathon_Policy_Bazar\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:693)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_003_Health_Insurance@5386659f]" started-at="2024-02-26T14:40:35 IST" name="tearDown" finished-at="2024-02-26T14:40:35 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_003_Health_Insurance -->
       <class name="testCases.TC_001_Student_Travel_Insurance">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@2767e23c]" started-at="2024-02-26T14:33:10 IST" name="setup" finished-at="2024-02-26T14:34:03 IST" duration-ms="53291" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="travel_insurance()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@2767e23c]" started-at="2024-02-26T14:34:03 IST" name="travel_insurance" finished-at="2024-02-26T14:35:10 IST" duration-ms="66713" status="PASS">
+        <test-method signature="travel_insurance()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@cecf639]" started-at="2024-02-26T16:34:25 IST" name="travel_insurance" finished-at="2024-02-26T16:34:25 IST" duration-ms="1" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'os' is required by BeforeSuite on method setup but has not been marked @Optional or defined
+in C:\Users\2303651\eclipse-workspace\Hackathon_Policy_Bazar\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'os' is required by BeforeSuite on method setup but has not been marked @Optional or defined
+in C:\Users\2303651\eclipse-workspace\Hackathon_Policy_Bazar\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:693)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- travel_insurance -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@2767e23c]" started-at="2024-02-26T14:35:10 IST" name="tearDown" finished-at="2024-02-26T14:35:10 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_001_Student_Travel_Insurance -->
       <class name="testCases.TC_002_Car_Insurance">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_002_Car_Insurance@710c2b53]" started-at="2024-02-26T14:35:10 IST" name="setup" finished-at="2024-02-26T14:36:01 IST" duration-ms="50861" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="car_Insurance()[pri:0, instance:testCases.TC_002_Car_Insurance@710c2b53]" started-at="2024-02-26T14:36:01 IST" name="car_Insurance" finished-at="2024-02-26T14:37:42 IST" duration-ms="100568" status="PASS">
+        <test-method signature="car_Insurance()[pri:0, instance:testCases.TC_002_Car_Insurance@1caa0244]" started-at="2024-02-26T16:34:25 IST" name="car_Insurance" finished-at="2024-02-26T16:34:25 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'os' is required by BeforeSuite on method setup but has not been marked @Optional or defined
+in C:\Users\2303651\eclipse-workspace\Hackathon_Policy_Bazar\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'os' is required by BeforeSuite on method setup but has not been marked @Optional or defined
+in C:\Users\2303651\eclipse-workspace\Hackathon_Policy_Bazar\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:693)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- car_Insurance -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_002_Car_Insurance@710c2b53]" started-at="2024-02-26T14:37:42 IST" name="tearDown" finished-at="2024-02-26T14:37:42 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_002_Car_Insurance -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
