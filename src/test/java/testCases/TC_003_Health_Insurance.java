@@ -7,12 +7,13 @@ import org.testng.annotations.Test;
 import pageObject.Health_Insurance;
 import pageObject.HomePage;
 import testBase.BaseClass;
+import utilities.ExcelUtility;
 
 public class TC_003_Health_Insurance extends BaseClass{
 
 
     @Test
-    public void HomePage() throws InterruptedException, IOException {
+    public void HomePage() throws Exception {
     	try {
     		
 			HomePage hp=new HomePage(driver);
@@ -28,8 +29,8 @@ public class TC_003_Health_Insurance extends BaseClass{
 	    	Np.Ageyears();
 	    	Np.Continuebutton2();
 	    	Np.SelectCity();
-	    	Np.IntName();
-	    	Np.MobileNumber();
+	    	Np.IntName(ExcelUtility.readExcel(4));
+	    	Np.MobileNumber(ExcelUtility.readExcel(5));
 	    	Np.Continuebutton4();
 	    	Np.CheckMedHis();
 	    	Np.HealthIns();

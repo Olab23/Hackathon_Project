@@ -1,5 +1,6 @@
 package pageObject;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -8,83 +9,176 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.ExcelUtility;
+
 public class Car_Insurance extends BasePage {
 	public	WebDriver driver;
+	public static String CarPlans;
+	
 	public Car_Insurance( WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(driver, this);
 			}
 	
+	@FindBy(linkText="Buying a new car? Click here")
+	WebElement buyingCar;
 	
-	@FindBy(xpath= "//a[@class='btn-proceed']")
-	WebElement buynew;
+	@FindBy(xpath="//*[@id=\"searchInput\"]/div/input")
+	WebElement searchRto;
 	
-	@FindBy(id="spn4")
-	WebElement city;
+	@FindBy(xpath="//span[text()='MH35-GONDIA(Maharashtra)']")
+	WebElement selectCity;
 	
-	@FindBy(xpath= "//*[@id='section2']/ul/li[1]/span")
-	WebElement rto;
+	@FindBy(xpath="//span[@class='tata']")
+	WebElement selectCar;
 	
-	@FindBy(xpath= "//*[@id='dvMake']/div/ul/div/li[12]/span")
-	WebElement car_brand;
+	@FindBy(xpath="//b[text()='NEXON']")
+	WebElement carModel;
 	
-	@FindBy(xpath= "//*[@id='modelScroll']/li[8]/span")
-	WebElement car_model;
+	@FindBy(xpath="//b[text()='Petrol']")
+	WebElement fuelType;
 	
-	@FindBy(xpath= "//*[@id='variantScroll']/li[2]/span")
-	WebElement model_variant;
+	@FindBy(xpath="//li[text()='Automatic']")
+	WebElement carVariant;
 	
-	@FindBy(xpath= "//*[@id='btnLeadDetails']/span")
-	WebElement view_details_button;
+	@FindBy(xpath="//b[text()='Creative Plus 1.2 Revotron Petrol 6AMT (1199 cc)']")
+	WebElement carVariantModel;
 	
-	@FindBy(id="name")
+	@FindBy(xpath="//*[@id='name']")
 	WebElement name;
 	
-	@FindBy(id="email")
+	@FindBy(xpath="//*[@id=\"email\"]")
 	WebElement email;
 	
-	@FindBy(id="mobileNo")
-	WebElement phone_no;
+	@FindBy(xpath="//*[@id=\"mobileNo\"]")
+	WebElement mobilNo;
 	
+	@FindBy(xpath="//div[@class='msg-error show']")
+	WebElement errorMessage;
 	
+	@FindBy(xpath="//span[text()='View Prices']")
+	WebElement viewButtonClick;
+	
+	@FindBy(xpath="//*[text()=\"I don't know my car's delivery date\"]")
+	WebElement deliveryDate;
+
+	@FindBy(xpath="//button[text()=\"I don't know my car's ex-showroom price\"]")
+	WebElement dontNo;
+	
+	@FindBy(xpath="//h2[text()='Refresh the page']")
+	WebElement refresh;
+	
+	@FindBy(xpath="//div[@class='crossBtn']")
+	WebElement crossButton;
+	
+	@FindBy(xpath="//p[text()=\"View Coverage\"]")
+	WebElement viewCoverage;
+	
+	@FindBy(xpath="//li[text()='Premium Breakup']")
+	WebElement Premium;
+	
+	@FindBy(xpath="//div[@class='popupBox padding0 policyDetailPopup slideToLeft']")
+	WebElement quote;
+	
+	@FindBy(xpath="//img[@alt='policybazaar']")
+	WebElement logoClick2;
+	
+
+	
+	public void buyCar() {
+		buyingCar.click();
+	}
+	
+	public void getSearchRto() {
+		searchRto.click();
+	}
+	
+	public void selectCityOption() {
+		selectCity.click();
+	}
+	
+	public void selectCarOption() {
+		selectCar.click();
+	}
+	public void carModelOption() {
+		carModel.click();
+	}
+	
+	public void fuelTypeOption() {
+		fuelType.click();
+	}
+	public void carVariantOption() {
+		carVariant.click();
+	}
+	
+	public void carVariantMode() {
+		carVariantModel.click();
+	}
+	public void getName(String name1) {
+		name.sendKeys(name1);
+	}
+	public void getEmail(String mail) {
+		email.sendKeys(mail);
+	}
+	public void getMobilNo(String mobil) {
+		mobilNo.sendKeys(mobil);
+	}
+	
+	public void getErrorMessage() {
+		System.out.println("---Capture the error message--- ");
+		System.out.println( errorMessage.getText());
+	}
+	
+	public void clearEmail() {
+		email.clear();
+	}
+	public void correctEmail(String mail1) {
+		email.sendKeys(mail1);
+	}
+	public void viewButton() {
+		viewButtonClick.click();
+	}
+	
+	public void getDeliveryDate() {
+		deliveryDate.click();
+		dontNo.click();
+	}
+	
+	public void getCarNo() throws InterruptedException {
 		
-	public void buynew() {
-		buynew.click();
+		try {
+			Thread.sleep(3000);
+			    if(refresh.isDisplayed()) {
+			    	crossButton.click();
+			    }
+			    	Thread.sleep(4000);
+		}
+		catch(org.openqa.selenium.NoSuchElementException e){
+				e.getStackTrace();
+		}
+		
 	}
-	
-	public void city_click() {
-		city.click();
-	}
-	public void rto_click() {
-		rto.click();
-	}
-	public void carbrand_click() {
-		car_brand.click();
-	}
-	
-	public void carModel_click() {
-		car_model.click();
-	}
-	public void carVariant_click() {
-		model_variant.click();
-	}
-	
-	public void send_Details() {
-		name.sendKeys("tester");
-		email.sendKeys("tr");
-		phone_no.sendKeys("1");
+	public void view(){
+		viewCoverage.click();
+		Premium.click();
 		
 	}
 	
-	
-	
-	public void print_error() {
-		view_details_button.click();
-		String error = super.driver.findElements(By.xpath("//*[@class='msg-error show']")).get(0).getText();
-		System.out.println(error);
+
+	public void getQuote() throws IOException {
+		CarPlans= quote.getText();
+		System.out.println("-------------Car Insurance Quote-----------");
+		System.out.println(CarPlans);
+		System.out.println("------------------------");
+		
+		ExcelUtility.excel();
 	}
-	}
 	
+	
+	
+}
+	
+
 
 
 

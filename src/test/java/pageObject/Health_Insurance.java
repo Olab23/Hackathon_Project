@@ -11,15 +11,15 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utilities.ExcelUtility;
+
+
 public class Health_Insurance extends BasePage{
    
-	WebDriver driver;
-//	JavascriptExecutor js=(JavascriptExecutor)driver;
+	JavascriptExecutor js=(JavascriptExecutor)driver;
 	public static List<String> allHealthList=new ArrayList<String>();
  
 	public Health_Insurance(WebDriver driver) {
 		super(driver);
-		PageFactory.initElements(driver, this);
 	}
 	
 	
@@ -48,7 +48,7 @@ public class Health_Insurance extends BasePage{
 	WebElement Button3;
 	
 	@FindBy(id="fullName")
-	WebElement name;
+	WebElement fullname;
 	
 	@FindBy(id="mobile")
 	WebElement mobilenum;
@@ -79,12 +79,6 @@ public class Health_Insurance extends BasePage{
 
 	@FindBy(className="quotes_rvmp_card__content__plan_header__name")
 	List<WebElement> allHealthInSuMenu;
-	
-//	@FindBy(xpath="//div[contains(@class,'quotes_rvmp_card segmentation_quoteCard')]")
-//	List<WebElement> NoofItems;
-	
-	
-	
 	
 	
 	public void SelectSelf() throws InterruptedException {
@@ -122,26 +116,22 @@ public class Health_Insurance extends BasePage{
 		Citypin.click();
 	}
 	public void SelectCity() throws InterruptedException{
-		try {
-			City.click();
-			}catch(Exception e) {
-				City.click();
-			}
+		js.executeScript("arguments[0].click();", City);
 		
 		
 	}
 	public void Continuebutton3() throws InterruptedException{
 		Button3.click();
 	}
-	public void IntName() throws InterruptedException{
-		name.click();
-		name.sendKeys("asdfg");
+	public void IntName(String name) throws InterruptedException{
+//		name.click();
+		fullname.sendKeys(name);
 //		
 	}
-	public void MobileNumber() throws InterruptedException{
-		//mobilenum.click();
+	public void MobileNumber(String mobilNo) throws InterruptedException{
+	
 		Thread.sleep(5000);
-		mobilenum.sendKeys("9168541055");
+		mobilenum.sendKeys(mobilNo);
 	}
 	public void Continuebutton4() throws InterruptedException{
 		Button4.click();
@@ -169,28 +159,29 @@ public class Health_Insurance extends BasePage{
 	  Applybut.click();
 	}
 	public void ListInfo() throws InterruptedException, IOException {
-//	for(WebElement a:NoofItems)	{
-//		System.out.println(a.getText());
-////	}
-//		JavascriptExecutor jse=(JavascriptExecutor)super.driver;
-//		for(int j=0; j<allButton.size(); j++) {
-//			jse.executeScript("arguments[0].scrollIntoView()",allButton.get(j));
-//			jse.executeScript("arguments[0].click();",allButton.get(j));
-//			Thread.sleep(1000);
-//		}
- 
+		
+		JavascriptExecutor jse=(JavascriptExecutor)driver;
+		for(int j=0; j<allButton.size(); j++) {
+			jse.executeScript("arguments[0].scrollIntoView()",allButton.get(j));
+			jse.executeScript("arguments[0].click();",allButton.get(j));
+			Thread.sleep(1000);
+		}
+
 		
 		System.out.println("Number of package Available: "+allHealthInSuMenu.size());
+		
 		for(int i=0; i<allHealthInSuMenu.size(); i++) {
 			allHealthList.add(allHealthInSuMenu.get(i).getText());
-
+			
+			
 		}
 		System.out.println("-------------Health Insurance List-------------- ");
 		for(int k=0; k<allHealthInSuMenu.size(); k++) {
-
+			
+			
 			System.out.println(allHealthList.get(k));
 		}
-		ExcelUtility.excelHI();
+		ExcelUtility.excel();
 	}
 	
 }

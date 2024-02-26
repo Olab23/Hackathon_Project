@@ -11,9 +11,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+
 import utilities.ExcelUtility;
 
-//import utilities.Apache;
 
 public class Travel_Insurance extends BasePage{
 
@@ -104,7 +104,7 @@ public class Travel_Insurance extends BasePage{
 	List<WebElement> packageName;
 	
 	@FindBy(xpath="//span[@class='premiumPlanPrice']")
-	List<WebElement> Price;
+	List<WebElement> price;
 	
 	
 	
@@ -231,9 +231,9 @@ public class Travel_Insurance extends BasePage{
 		Next.click();
 	}
 	
-	public void phoneNo() throws InterruptedException {
+	public void phoneNo(String Mobile) throws InterruptedException {
 		
-		mobileNo.sendKeys("9696682791");
+		mobileNo.sendKeys(Mobile);
 		viewPlans.click();
 	}
 	
@@ -261,14 +261,14 @@ public class Travel_Insurance extends BasePage{
 		for(int i=0;i<3;i++) {
 			 company.add(companyName.get(i).getText());
 			 name.add(packageName.get(i).getText());
-			 prices.add(Price.get(i).getText());
+			 prices.add(price.get(i).getText());
 		 }
 		 System.out.println("Company Name      Package Name      Price");
 		 for(int j=0;j<3;j++){
 		 System.out.println(company.get(j)+"---"+name.get(j)+"---"+prices.get(j));
 		 }
 		 
-		 ExcelUtility.excelTI();
+		 ExcelUtility.excel();
 		
 	}
 }

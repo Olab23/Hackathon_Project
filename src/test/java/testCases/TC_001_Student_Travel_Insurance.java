@@ -7,11 +7,12 @@ import org.testng.annotations.Test;
 import pageObject.HomePage;
 import pageObject.Travel_Insurance;
 import testBase.BaseClass;
+import utilities.ExcelUtility;
 
 public class TC_001_Student_Travel_Insurance extends BaseClass{
 	
 	@Test
-	public void travel_insurance() throws InterruptedException, IOException {
+	public void travel_insurance() throws Exception {
 
 		HomePage hp=new HomePage(driver);
 		hp.travelinsurance();
@@ -26,7 +27,7 @@ public class TC_001_Student_Travel_Insurance extends BaseClass{
 		Np.noOfStudent();
 		Np.selectStudentAge();
 		Np.medicalCond();
-		Np.phoneNo();
+		Np.phoneNo(ExcelUtility.readExcel(0));
 		Np.studentPlan();
 		Np.plans();
 		Np.plansData();

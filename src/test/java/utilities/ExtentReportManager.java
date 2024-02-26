@@ -10,7 +10,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 
-import org.apache.hc.core5.http.Message;
 import org.openqa.selenium.virtualauthenticator.VirtualAuthenticatorOptions.Transport;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
