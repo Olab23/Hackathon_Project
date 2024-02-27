@@ -1,0 +1,56 @@
+15:45:02.592 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Chrome browser opened successfully
+15:45:45.026 [main] INFO  testCases.TC_001_Student_Travel_Insurance - **** starting TC_001_TravelDetails  *****
+15:45:45.210 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Opening of Travel Insurance Page 
+15:46:25.596 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Entering customer details.. 
+15:46:26.230 [main] INFO  testCases.TC_001_Student_Travel_Insurance - clicked on continue..
+15:46:29.315 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Select Student...
+15:46:58.353 [main] INFO  testCases.TC_002_Car_Insurance - Chrome browser opened successfully
+15:48:37.719 [main] INFO  testCases.TC_003_Health_Insurance - Chrome browser opened successfully
+09:42:14.214 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Chrome browser opened successfully
+09:42:16.793 [main] INFO  testCases.TC_001_Student_Travel_Insurance - **** starting TC_001_TravelDetails  *****
+09:42:16.940 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Opening of Travel Insurance Page 
+09:43:56.780 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Chrome browser opened successfully
+09:44:40.184 [main] INFO  testCases.TC_001_Student_Travel_Insurance - **** starting TC_001_TravelDetails  *****
+09:44:40.456 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Opening of Travel Insurance Page 
+09:45:35.211 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Entering customer details.. 
+09:45:36.652 [main] INFO  testCases.TC_001_Student_Travel_Insurance - clicked on continue..
+09:45:43.184 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Select Student...
+09:45:52.698 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Select Student Plan...
+09:46:09.385 [main] INFO  testCases.TC_001_Student_Travel_Insurance - **** finished TC_001_TravelDetails  *****
+11:28:36.961 [main] INFO  testBase.BaseClass - Chrome browser opened successfully
+11:29:42.810 [main] INFO  testBase.BaseClass - Chrome browser opened successfully
+11:49:32.183 [main] INFO  testBase.BaseClass - Chrome browser opened successfully
+11:56:36.971 [main] INFO  testBase.BaseClass - Chrome browser opened successfully
+13:48:42.497 [main] INFO  testBase.BaseClass - Chrome browser opened successfully
+14:13:41.652 [main] INFO  testBase.BaseClass - Chrome browser opened successfully
+14:16:42.014 [main] INFO  testBase.BaseClass - Chrome browser opened successfully
+14:57:13.393 [main] INFO  testBase.BaseClass - Chrome browser opened successfully
+14:59:24.229 [main] INFO  testBase.BaseClass - Chrome browser opened successfully
+15:04:27.338 [main] INFO  testBase.BaseClass - Chrome browser opened successfully
+15:06:35.518 [main] INFO  testBase.BaseClass - Chrome browser opened successfully
+15:13:18.763 [main] INFO  testCases.TC_002_Car_Insurance - Chrome browser opened successfully
+15:13:59.926 [main] INFO  testCases.TC_002_Car_Insurance - **** starting TC_002_Car_Insurance  *****
+15:14:00.644 [main] INFO  testCases.TC_002_Car_Insurance - Buying new car.. 
+15:14:41.344 [main] INFO  testCases.TC_002_Car_Insurance - Search RTO.. 
+15:14:43.287 [main] INFO  testCases.TC_002_Car_Insurance - Selecting city.. 
+15:14:44.158 [main] INFO  testCases.TC_002_Car_Insurance - Selecting car details.. 
+15:14:46.724 [main] INFO  testCases.TC_002_Car_Insurance - Entering customer details.. 
+15:14:52.042 [main] INFO  testCases.TC_002_Car_Insurance - Capturing Error msg.. 
+15:14:52.411 [main] INFO  testCases.TC_002_Car_Insurance - Entering correct email.. 
+15:17:29.037 [main] INFO  testCases.TC_002_Car_Insurance - Chrome browser opened successfully
+15:18:11.783 [main] INFO  testCases.TC_002_Car_Insurance - **** starting TC_002_Car_Insurance  *****
+15:18:13.756 [main] INFO  testCases.TC_002_Car_Insurance - Buying new car.. 
+15:18:57.236 [main] INFO  testCases.TC_002_Car_Insurance - Search RTO.. 
+15:18:58.356 [main] INFO  testCases.TC_002_Car_Insurance - Selecting city.. 
+15:18:58.700 [main] INFO  testCases.TC_002_Car_Insurance - Selecting car details.. 
+15:19:01.779 [main] INFO  testCases.TC_002_Car_Insurance - Entering customer details.. 
+15:19:07.780 [main] INFO  testCases.TC_002_Car_Insurance - Capturing Error msg.. 
+15:19:08.172 [main] INFO  testCases.TC_002_Car_Insurance - Entering correct email.. 
+15:36:26.637 [main] INFO  testCases.TC_002_Car_Insurance - Chrome browser opened successfully
+15:37:08.808 [main] INFO  testCases.TC_002_Car_Insurance - **** starting TC_002_Car_Insurance  *****
+15:37:10.191 [main] INFO  testCases.TC_002_Car_Insurance - Buying new car.. 
+15:37:51.831 [main] INFO  testCases.TC_002_Car_Insurance - Search RTO.. 
+15:37:52.916 [main] INFO  testCases.TC_002_Car_Insurance - Selecting city.. 
+15:37:53.324 [main] INFO  testCases.TC_002_Car_Insurance - Selecting car details.. 
+15:37:55.992 [main] INFO  testCases.TC_002_Car_Insurance - Entering customer details.. 
+15:38:00.754 [main] INFO  testCases.TC_002_Car_Insurance - Capturing Error msg.. 

@@ -1,155 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-26T16:34:24 IST" name="Suite" finished-at="2024-02-26T16:34:25 IST" duration-ms="963">
+  <suite started-at="2024-02-27T16:27:07 IST" name="Default suite" finished-at="2024-02-27T16:36:17 IST" duration-ms="549229">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGRunner@4722ef0c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-02-26T16:34:24 IST" name="Test" finished-at="2024-02-26T16:34:25 IST" duration-ms="963">
-      <class name="testBase.BaseClass">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testBase.BaseClass@5e2c3d18]" started-at="2024-02-26T16:34:24 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1708945464068" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'os' is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\2303651\eclipse-workspace\Hackathon_Policy_Bazar\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'os' is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\2303651\eclipse-workspace\Hackathon_Policy_Bazar\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:693)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test started-at="2024-02-27T16:27:07 IST" name="Default test" finished-at="2024-02-27T16:36:17 IST" duration-ms="549229">
+      <class name="testRunner.TestNGRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestNGRunner@4722ef0c]" started-at="2024-02-27T16:27:08 IST" name="setUpClass" finished-at="2024-02-27T16:27:17 IST" duration-ms="9549" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@65a8c306]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testBase.BaseClass@5e2c3d18]" started-at="2024-02-26T16:34:38 IST" name="tearDown" finished-at="2024-02-26T16:34:38 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGRunner@4722ef0c]" started-at="2024-02-27T16:27:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-27T16:30:08 IST" duration-ms="170603" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Student Travel Insurance Plan"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Run the project"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testBase.BaseClass -->
-      <class name="testCases.TC_003_Health_Insurance">
-        <test-method signature="HomePage()[pri:0, instance:testCases.TC_003_Health_Insurance@7ce026d3]" started-at="2024-02-26T16:34:25 IST" name="HomePage" finished-at="2024-02-26T16:34:25 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'os' is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\2303651\eclipse-workspace\Hackathon_Policy_Bazar\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'os' is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\2303651\eclipse-workspace\Hackathon_Policy_Bazar\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:693)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGRunner@4722ef0c]" started-at="2024-02-27T16:30:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-27T16:33:03 IST" duration-ms="175292" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Car Insurance Plan"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Run the project"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HomePage -->
-      </class> <!-- testCases.TC_003_Health_Insurance -->
-      <class name="testCases.TC_001_Student_Travel_Insurance">
-        <test-method signature="travel_insurance()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@cecf639]" started-at="2024-02-26T16:34:25 IST" name="travel_insurance" finished-at="2024-02-26T16:34:25 IST" duration-ms="1" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'os' is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\2303651\eclipse-workspace\Hackathon_Policy_Bazar\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'os' is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\2303651\eclipse-workspace\Hackathon_Policy_Bazar\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:693)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGRunner@4722ef0c]" started-at="2024-02-27T16:33:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-27T16:36:09 IST" duration-ms="185542" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Health Insurance Plan"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Run the project"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- travel_insurance -->
-      </class> <!-- testCases.TC_001_Student_Travel_Insurance -->
-      <class name="testCases.TC_002_Car_Insurance">
-        <test-method signature="car_Insurance()[pri:0, instance:testCases.TC_002_Car_Insurance@1caa0244]" started-at="2024-02-26T16:34:25 IST" name="car_Insurance" finished-at="2024-02-26T16:34:25 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'os' is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\2303651\eclipse-workspace\Hackathon_Policy_Bazar\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'os' is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\2303651\eclipse-workspace\Hackathon_Policy_Bazar\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:693)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestNGRunner@4722ef0c]" started-at="2024-02-27T16:36:09 IST" name="tearDownClass" finished-at="2024-02-27T16:36:17 IST" duration-ms="7690" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- car_Insurance -->
-      </class> <!-- testCases.TC_002_Car_Insurance -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.TestNGRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

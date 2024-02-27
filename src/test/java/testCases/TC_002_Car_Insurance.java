@@ -31,7 +31,7 @@ public class TC_002_Car_Insurance extends BaseClass  {
 		logger.info("Entering customer details.. ");
 		rc.getName(ExcelUtility.readExcel(1));
 		rc.getEmail(ExcelUtility.readExcel(2));
-		rc.getMobilNo(ExcelUtility.readExcel(0));
+		rc.getMobilNo();
 		logger.info("Capturing Error msg.. ");
 		rc.getErrorMessage();
 		rc.clearEmail();

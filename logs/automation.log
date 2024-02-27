@@ -1,8 +1,13 @@
-15:45:02.592 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Chrome browser opened successfully
-15:45:45.026 [main] INFO  testCases.TC_001_Student_Travel_Insurance - **** starting TC_001_TravelDetails  *****
-15:45:45.210 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Opening of Travel Insurance Page 
-15:46:25.596 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Entering customer details.. 
-15:46:26.230 [main] INFO  testCases.TC_001_Student_Travel_Insurance - clicked on continue..
-15:46:29.315 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Select Student...
-15:46:58.353 [main] INFO  testCases.TC_002_Car_Insurance - Chrome browser opened successfully
-15:48:37.719 [main] INFO  testCases.TC_003_Health_Insurance - Chrome browser opened successfully
+15:38:01.078 [main] INFO  testCases.TC_002_Car_Insurance - Entering correct email.. 
+15:38:52.552 [main] INFO  testCases.TC_002_Car_Insurance - Getting Car quote.. 
+15:38:54.877 [main] INFO  testCases.TC_002_Car_Insurance - **** finished TC_002_Car_Insurance  *****
+15:41:58.934 [main] INFO  testBase.BaseClass - Chrome browser opened successfully
+15:44:09.388 [main] INFO  testBase.BaseClass - Chrome browser opened successfully
+15:53:25.389 [main] INFO  testBase.BaseClass - Chrome browser opened successfully
+16:03:58.855 [main] INFO  testBase.BaseClass - Chrome browser opened successfully
+16:10:54.325 [main] INFO  testBase.BaseClass - Chrome browser opened successfully
+16:13:07.261 [main] INFO  testBase.BaseClass - Chrome browser opened successfully
+16:16:15.441 [main] INFO  testBase.BaseClass - Chrome browser opened successfully
+16:27:47.468 [main] INFO  testBase.BaseClass - Chrome browser opened successfully
+16:30:24.563 [main] INFO  testBase.BaseClass - Chrome browser opened successfully
+16:33:21.318 [main] INFO  testBase.BaseClass - Chrome browser opened successfully

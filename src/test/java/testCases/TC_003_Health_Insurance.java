@@ -24,18 +24,22 @@ public class TC_003_Health_Insurance extends BaseClass{
 		e.printStackTrace();
 	 }
     	Health_Insurance Np= new Health_Insurance(driver);
+    	logger.info("Open of Health Insurance Page ");
 			Np.Continuebutton();
-			logger.info("Selecting .. ");
+			logger.info("Selecting Customer deatils.. ");
+			
 			Np.SelectAge();
 	    	Thread.sleep(4000);
 	    	Np.Ageyears();
 	    	Np.Continuebutton2();
 	    	Np.SelectCity();
+	    	logger.info("Entering Customer personel deatils.. ");
 	    	Np.IntName(ExcelUtility.readExcel(4));
 	    	Np.MobileNumber(ExcelUtility.readExcel(5));
 	    	Np.Continuebutton4();
 	    	Np.CheckMedHis();
 	    	Np.HealthIns();
+	    	logger.info("Health Insurance plan.. ");
 	    	Np.Viewplans();
 	    	Np.SelSort();
 	    	Np.SelLowtoHigh();

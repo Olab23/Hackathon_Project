@@ -31,11 +31,9 @@ public class BaseClass {
 	public Logger logger;
 	public Properties p;
 		
-		@SuppressWarnings("deprecation")
 		
 		@BeforeClass
-		@Parameters({"os", "browser"})
-		public void setup(String os, String br) throws IOException {
+		public void setup() throws IOException {
 			
 			logger=LogManager.getLogger(this.getClass());
 			
@@ -46,22 +44,22 @@ public class BaseClass {
 			Option.addArguments("--disable-notifications");
 			eOption.addArguments("--disable-notifications");
 			
-			FileReader file = new FileReader(".//src/test/resources/config.properties");
-			p=new Properties();
-			p.load(file);
+//			FileReader file = new FileReader(".//src/test/resources/config.properties");
+//			p=new Properties();
+//			p.load(file);
 			
 			
-			if(p.getProperty("execution_env").equalsIgnoreCase("remote"))
+			if(getProperties().getProperty("execution_env").equalsIgnoreCase("remote"))
 		 	{	
 			
 			DesiredCapabilities capabilities=new DesiredCapabilities();
 			
 			//os
-			if(os.equalsIgnoreCase("windows"))
+			if(getProperties().getProperty("os").equalsIgnoreCase("windows"))
 			{
 				capabilities.setPlatform(Platform.WIN11);
 			}
-			else if(os.equalsIgnoreCase("mac"))
+			else if(p.getProperty("os").equalsIgnoreCase("mac"))
 			{
 				capabilities.setPlatform(Platform.MAC);
 			}
@@ -72,7 +70,7 @@ public class BaseClass {
 			}
 			
 			//browser
-			switch(br.toLowerCase())
+			switch(getProperties().getProperty("browser").toLowerCase())
 			{
 			case "chrome" : capabilities.setBrowserName("chrome"); break;
 			case "edge" : capabilities.setBrowserName("MicrosoftEdge"); break;
@@ -83,10 +81,10 @@ public class BaseClass {
 			
 		    }
 			
-		else if(p.getProperty("execution_env").equalsIgnoreCase("local"))
+		else if(getProperties().getProperty("execution_env").equalsIgnoreCase("local"))
 		{
 			//launching browser based on condition - locally
-			switch(br.toLowerCase())
+			switch(getProperties().getProperty("browser").toLowerCase())
 			{
 			case "chrome": driver=new ChromeDriver(Option); logger.info("Chrome browser opened successfully"); break;
 			case "edge": driver=new EdgeDriver(eOption); logger.info("Chrome browser opened successfully"); break;
@@ -98,11 +96,30 @@ public class BaseClass {
 			
 			
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			driver.get(p.getProperty("appURL"));
+			driver.get(getProperties().getProperty("appURL"));
 			driver.manage().window().maximize();
 		}
 		
+		public Properties getProperties() {
+			try {
+	    		
+	    		//creating a FileReader object to read config file
+	    		FileReader file=new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\config.properties");      //path of config.properties file
+	    		p=new Properties();			  //Creating an object for Properties
+	    		p.load(file);				  //Loading the properties from configuration file
+	    	}
+	    	catch(Exception e) {
+			    //catch the exception that occur during file reading and loading properties
+	    	}
+	    	return p;
+		}
 		
+		
+		public static WebDriver getDriver() {
+					
+					return driver;
+		}
+
 		@AfterClass
 		public void tearDown() {
 			driver.quit();
@@ -123,5 +140,8 @@ public class BaseClass {
 			
 			return targetFilePath;
 		}
+
+
+		
 		
 }

@@ -5,22 +5,7 @@
     <listener class-name="utilities.ExtentReportManager"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="os" value="Windows"/>
-    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC_003_Health_Insurance">
-        <methods>
-          <include name="tearDown"/>
-          <include name="HomePage"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC_003_Health_Insurance -->
-      <class name="testBase.BaseClass">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testBase.BaseClass -->
       <class name="testCases.TC_002_Car_Insurance">
         <methods>
           <include name="tearDown"/>
@@ -28,13 +13,6 @@
           <include name="setup"/>
         </methods>
       </class> <!-- testCases.TC_002_Car_Insurance -->
-      <class name="testCases.TC_001_Student_Travel_Insurance">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="travel_insurance"/>
-        </methods>
-      </class> <!-- testCases.TC_001_Student_Travel_Insurance -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

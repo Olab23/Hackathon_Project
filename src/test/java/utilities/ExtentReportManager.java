@@ -34,7 +34,7 @@ public class ExtentReportManager implements ITestListener {
 		
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
 		repName = "Test-Report-" + timeStamp + ".html";
-		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);// specify location of the report
+		sparkReporter = new ExtentSparkReporter(".\\NGreports\\" + repName);// specify location of the report
 
 		sparkReporter.config().setDocumentTitle("Travel Insurance Report"); // Title of report
 		sparkReporter.config().setReportName("Travel Insurance Testing"); // name of the report
@@ -42,7 +42,7 @@ public class ExtentReportManager implements ITestListener {
 		
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
-		extent.setSystemInfo("Application", "policybazar");
+		extent.setSystemInfo("Application", "Policybazar");
 		extent.setSystemInfo("Module", "Admin");
 		extent.setSystemInfo("Sub Module", "Customers");
 		extent.setSystemInfo("User Name", System.getProperty("user.name"));
@@ -93,7 +93,7 @@ public class ExtentReportManager implements ITestListener {
 		extent.flush();
 		
 		//To open report on desktop..
-		String pathOfExtentReport = System.getProperty("user.dir")+"\\reports\\"+repName;
+		String pathOfExtentReport = System.getProperty("user.dir")+"\\NGreports\\"+repName;
 		File extentReport = new File(pathOfExtentReport);
 		
 		try {

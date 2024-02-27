@@ -120,8 +120,8 @@ public class Car_Insurance extends BasePage {
 	public void getEmail(String mail) {
 		email.sendKeys(mail);
 	}
-	public void getMobilNo(String mobil) {
-		mobilNo.sendKeys(mobil);
+	public void getMobilNo() {
+		mobilNo.sendKeys("9876543468");
 	}
 	
 	public void getErrorMessage() {
