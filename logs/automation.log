@@ -42,3 +42,6 @@
 11:17:27.487 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Select Student...
 11:17:36.595 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Select Student Plan...
 11:18:03.410 [main] INFO  testCases.TC_001_Student_Travel_Insurance - **** finished TC_001_TravelDetails  *****
+11:47:10.628 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Chrome browser opened successfully
+11:47:29.062 [main] INFO  testCases.TC_001_Student_Travel_Insurance - **** starting TC_001_TravelDetails  *****
+11:47:29.400 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Opening of Travel Insurance Page 

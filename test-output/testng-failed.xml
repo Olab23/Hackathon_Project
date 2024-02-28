@@ -5,6 +5,11 @@
     <listener class-name="utilities.ExtentReportManager"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="travel"/>
+      </run>
+    </groups>
     <classes>
       <class name="testCases.TC_001_Student_Travel_Insurance">
         <methods>
