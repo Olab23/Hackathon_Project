@@ -18,7 +18,6 @@ import utilities.ExcelUtility;
 public class Travel_Insurance extends BasePage{
 
 	WebDriver driver;
-	Locators loc = new Locators(driver);
 	
 	public static List<String> company = new ArrayList<String>();
 	public static List<String> name = new ArrayList<String>();
@@ -115,7 +114,6 @@ public class Travel_Insurance extends BasePage{
 	
 	public void selectCountry() throws InterruptedException {
 		
-		loc.waitForElement(Country);
 		Country.click();
 	}
 	
@@ -134,7 +132,6 @@ public class Travel_Insurance extends BasePage{
 	
 	public void nextPage() throws InterruptedException {
 		
-		loc.waitForElement(Next);
 		Next.click();
 	}
 	
