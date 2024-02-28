@@ -12,7 +12,7 @@ import utilities.ExcelUtility;
 public class TC_003_Health_Insurance extends BaseClass{
 
 
-    @Test
+    @Test(groups = {"health", "master"})
     public void HomePage() throws Exception {
     	logger.info("**** starting TC_003_Health_Insurance  *****");
     	try {

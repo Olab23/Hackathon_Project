@@ -11,7 +11,7 @@ import utilities.ExcelUtility;
 
 public class TC_001_Student_Travel_Insurance extends BaseClass{
 	
-	@Test
+	@Test(groups = {"travel", "master"})
 	public void travel_insurance() throws Exception {
 		
 		logger.info("**** starting TC_001_TravelDetails  *****");

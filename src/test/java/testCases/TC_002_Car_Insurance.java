@@ -9,7 +9,7 @@ import utilities.ExcelUtility;
 public class TC_002_Car_Insurance extends BaseClass  {
 
 	
-	@Test
+	@Test(groups = {"car", "master"})
 	public void car_Insurance () throws Exception  {
 		logger.info("**** starting TC_002_Car_Insurance  *****");
 		HomePage hm = new HomePage(driver);

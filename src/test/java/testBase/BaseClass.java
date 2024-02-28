@@ -32,7 +32,7 @@ public class BaseClass {
 	public Properties p;
 		
 		
-		@BeforeClass
+		@BeforeClass(groups = {"travel", "car", "health", "master"})
 		public void setup() throws IOException {
 			
 			logger=LogManager.getLogger(this.getClass());
@@ -95,7 +95,7 @@ public class BaseClass {
 		}
 			
 			
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
 			driver.get(getProperties().getProperty("appURL"));
 			driver.manage().window().maximize();
 		}
@@ -120,7 +120,7 @@ public class BaseClass {
 					return driver;
 		}
 
-		@AfterClass
+		@AfterClass(groups = {"travel", "car", "health", "master"})
 		public void tearDown() {
 			driver.quit();
 		}
