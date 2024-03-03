@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -59,10 +60,10 @@ public class Car_Insurance extends BasePage {
 	@FindBy(xpath="//span[text()='View Prices']")
 	WebElement viewButtonClick;
 	
-	@FindBy(xpath="//button[@type='button']")
+	@FindBy(xpath="//button[normalize-space()='I don't know my car's delivery date']")
 	WebElement deliveryDate;
 
-	@FindBy(xpath="//button[@type='button']")
+	@FindBy(xpath="//button[normalize-space()='I don't know my car's ex-showroom price']")
 	WebElement dontNo;
 	
 	@FindBy(xpath="//h2[text()='Refresh the page']")
@@ -140,8 +141,12 @@ public class Car_Insurance extends BasePage {
 	}
 	
 	public void getDeliveryDate() {
-		deliveryDate.click();
-		dontNo.click();
+		JavascriptExecutor js = (JavascriptExecutor)super.driver;
+		
+//		js.executeScript("arguments[0].click();", super.driver.findElement(By.xpath("(//button[normalize-space()='I don't know my car's delivery date'])[1]")));
+		super.driver.findElement(By.xpath("(//button[normalize-space()=\"I don't know my car's delivery date\"])[1]")).click();
+//		js.executeScript("arguments[0].click();", super.driver.findElement(By.xpath("(//button[normalize-space()='I don't know my car's ex-showroom price'])[1]")));
+		super.driver.findElement(By.xpath("(//button[normalize-space()=\"I don't know my car's ex-showroom price\"])[1]")).click();
 	}
 	
 	public void getCarNo() throws InterruptedException {

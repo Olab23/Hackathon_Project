@@ -1,1 +1,25 @@
-22:57:19.119 [main] INFO  testCases.TC_002_Car_Insurance - Entering correct email.. 
+00:28:21.096 [main] INFO  testCases.TC_002_Car_Insurance - Selecting city.. 
+00:28:21.706 [main] INFO  testCases.TC_002_Car_Insurance - Selecting car details.. 
+00:28:25.024 [main] INFO  testCases.TC_002_Car_Insurance - Entering customer details.. 
+00:28:31.049 [main] INFO  testCases.TC_002_Car_Insurance - Capturing Error msg.. 
+00:28:31.835 [main] INFO  testCases.TC_002_Car_Insurance - Entering correct email.. 
+00:31:14.099 [main] INFO  testCases.TC_002_Car_Insurance - Chrome browser opened successfully
+00:31:31.439 [main] INFO  testCases.TC_002_Car_Insurance - **** starting TC_002_Car_Insurance  *****
+00:31:35.264 [main] INFO  testCases.TC_002_Car_Insurance - Buying new car.. 
+00:31:44.082 [main] INFO  testCases.TC_002_Car_Insurance - Search RTO.. 
+00:31:46.151 [main] INFO  testCases.TC_002_Car_Insurance - Selecting city.. 
+00:31:46.906 [main] INFO  testCases.TC_002_Car_Insurance - Selecting car details.. 
+00:31:51.246 [main] INFO  testCases.TC_002_Car_Insurance - Entering customer details.. 
+00:32:00.205 [main] INFO  testCases.TC_002_Car_Insurance - Capturing Error msg.. 
+00:32:01.275 [main] INFO  testCases.TC_002_Car_Insurance - Entering correct email.. 
+00:33:52.177 [main] INFO  testCases.TC_002_Car_Insurance - Chrome browser opened successfully
+00:34:04.151 [main] INFO  testCases.TC_002_Car_Insurance - **** starting TC_002_Car_Insurance  *****
+00:34:04.884 [main] INFO  testCases.TC_002_Car_Insurance - Buying new car.. 
+00:34:14.514 [main] INFO  testCases.TC_002_Car_Insurance - Search RTO.. 
+00:34:16.336 [main] INFO  testCases.TC_002_Car_Insurance - Selecting city.. 
+00:34:17.031 [main] INFO  testCases.TC_002_Car_Insurance - Selecting car details.. 
+00:34:20.638 [main] INFO  testCases.TC_002_Car_Insurance - Entering customer details.. 
+00:34:26.939 [main] INFO  testCases.TC_002_Car_Insurance - Capturing Error msg.. 
+00:34:27.840 [main] INFO  testCases.TC_002_Car_Insurance - Entering correct email.. 
+00:35:05.173 [main] INFO  testCases.TC_002_Car_Insurance - Getting Car quote.. 
+00:35:07.095 [main] INFO  testCases.TC_002_Car_Insurance - **** finished TC_002_Car_Insurance  *****
