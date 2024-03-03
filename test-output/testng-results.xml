@@ -1,63 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-03T15:59:03 IST" name="Suite" finished-at="2024-03-03T16:03:47 IST" duration-ms="283840">
+  <suite started-at="2024-03-03T22:56:22 IST" name="Suite" finished-at="2024-03-03T22:57:25 IST" duration-ms="63153">
     <groups>
       <group name="car">
-        <method signature="TC_002_Car_Insurance.car_Insurance()[pri:0, instance:testCases.TC_002_Car_Insurance@f79e]" name="car_Insurance" class="testCases.TC_002_Car_Insurance"/>
+        <method signature="TC_002_Car_Insurance.car_Insurance()[pri:0, instance:testCases.TC_002_Car_Insurance@1a245833]" name="car_Insurance" class="testCases.TC_002_Car_Insurance"/>
       </group> <!-- car -->
-      <group name="health">
-        <method signature="TC_003_Health_Insurance.HomePage()[pri:0, instance:testCases.TC_003_Health_Insurance@7ee8290b]" name="HomePage" class="testCases.TC_003_Health_Insurance"/>
-      </group> <!-- health -->
-      <group name="travel">
-        <method signature="TC_001_Student_Travel_Insurance.travel_insurance()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@1190200a]" name="travel_insurance" class="testCases.TC_001_Student_Travel_Insurance"/>
-      </group> <!-- travel -->
       <group name="master">
-        <method signature="TC_001_Student_Travel_Insurance.travel_insurance()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@1190200a]" name="travel_insurance" class="testCases.TC_001_Student_Travel_Insurance"/>
-        <method signature="TC_002_Car_Insurance.car_Insurance()[pri:0, instance:testCases.TC_002_Car_Insurance@f79e]" name="car_Insurance" class="testCases.TC_002_Car_Insurance"/>
-        <method signature="TC_003_Health_Insurance.HomePage()[pri:0, instance:testCases.TC_003_Health_Insurance@7ee8290b]" name="HomePage" class="testCases.TC_003_Health_Insurance"/>
+        <method signature="TC_002_Car_Insurance.car_Insurance()[pri:0, instance:testCases.TC_002_Car_Insurance@1a245833]" name="car_Insurance" class="testCases.TC_002_Car_Insurance"/>
       </group> <!-- master -->
     </groups>
-    <test started-at="2024-03-03T15:59:03 IST" name="Test" finished-at="2024-03-03T16:03:47 IST" duration-ms="283840">
-      <class name="testCases.TC_003_Health_Insurance">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_003_Health_Insurance@7ee8290b]" started-at="2024-03-03T16:01:48 IST" name="setup" finished-at="2024-03-03T16:01:59 IST" duration-ms="11272" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="HomePage()[pri:0, instance:testCases.TC_003_Health_Insurance@7ee8290b]" started-at="2024-03-03T16:01:59 IST" name="HomePage" finished-at="2024-03-03T16:03:47 IST" duration-ms="107365" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_003_Health_Insurance@7ee8290b]" started-at="2024-03-03T16:03:47 IST" name="tearDown" finished-at="2024-03-03T16:03:47 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_003_Health_Insurance -->
-      <class name="testCases.TC_001_Student_Travel_Insurance">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@1190200a]" started-at="2024-03-03T15:59:04 IST" name="setup" finished-at="2024-03-03T15:59:18 IST" duration-ms="13972" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="travel_insurance()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@1190200a]" started-at="2024-03-03T15:59:18 IST" name="travel_insurance" finished-at="2024-03-03T16:00:43 IST" duration-ms="84792" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- travel_insurance -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@1190200a]" started-at="2024-03-03T16:00:43 IST" name="tearDown" finished-at="2024-03-03T16:00:43 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_001_Student_Travel_Insurance -->
+    <test started-at="2024-03-03T22:56:22 IST" name="Test" finished-at="2024-03-03T22:57:25 IST" duration-ms="63153">
       <class name="testCases.TC_002_Car_Insurance">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_002_Car_Insurance@f79e]" started-at="2024-03-03T16:00:44 IST" name="setup" finished-at="2024-03-03T16:00:54 IST" duration-ms="10261" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_002_Car_Insurance@1a245833]" started-at="2024-03-03T22:56:24 IST" name="setup" finished-at="2024-03-03T22:56:57 IST" duration-ms="32612" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="car_Insurance()[pri:0, instance:testCases.TC_002_Car_Insurance@f79e]" started-at="2024-03-03T16:00:54 IST" name="car_Insurance" finished-at="2024-03-03T16:01:47 IST" duration-ms="53362" status="PASS">
+        <test-method signature="car_Insurance()[pri:0, instance:testCases.TC_002_Car_Insurance@1a245833]" started-at="2024-03-03T22:56:57 IST" name="car_Insurance" finished-at="2024-03-03T22:57:20 IST" duration-ms="23105" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //*[text()='I don't know my car's delivery date'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[text()='I don't know my car's delivery date']' is not a valid XPath expression.
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4a9a63b161536ef3f21e7d731ca1e584, findElement {value=//*[text()='I don't know my car's delivery date'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62559}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62559/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a9a63b161536ef3f21e7d731ca1e584]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //*[text()='I don't know my car's delivery date'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[text()='I don't know my car's delivery date']' is not a valid XPath expression.
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4a9a63b161536ef3f21e7d731ca1e584, findElement {value=//*[text()='I don't know my car's delivery date'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62559}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62559/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a9a63b161536ef3f21e7d731ca1e584
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy48.click(Unknown Source)
+at pageObject.Car_Insurance.getDeliveryDate(Car_Insurance.java:143)
+at testCases.TC_002_Car_Insurance.car_Insurance(TC_002_Car_Insurance.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- car_Insurance -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_002_Car_Insurance@f79e]" started-at="2024-03-03T16:01:48 IST" name="tearDown" finished-at="2024-03-03T16:01:48 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_002_Car_Insurance@1a245833]" started-at="2024-03-03T22:57:25 IST" name="tearDown" finished-at="2024-03-03T22:57:25 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -59,10 +59,10 @@ public class Car_Insurance extends BasePage {
 	@FindBy(xpath="//span[text()='View Prices']")
 	WebElement viewButtonClick;
 	
-	@FindBy(xpath="//*[text()='I don't know my car's delivery date']")
+	@FindBy(xpath="//button[@type='button']")
 	WebElement deliveryDate;
 
-	@FindBy(xpath="//button[text()='I don't know my car's ex-showroom price']")
+	@FindBy(xpath="//button[@type='button']")
 	WebElement dontNo;
 	
 	@FindBy(xpath="//h2[text()='Refresh the page']")

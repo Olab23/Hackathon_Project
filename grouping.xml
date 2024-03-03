@@ -8,10 +8,10 @@
   <test thread-count="5" name="Test">
 	   <groups>
 			<run>
-				<include name="travel" /> 
-				<!--<include name="car" />
-				<include name="health" />-->
-				<!-- <include name="master" />  -->
+				<!--<include name="travel" /> -->
+				<include name="car" />
+				<!--<include name="health" />
+				 <include name="master" />  -->
 				<!-- <exclude name="" /> -->
 			</run>
 		</groups>
