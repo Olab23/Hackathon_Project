@@ -122,7 +122,7 @@ public class BaseClass {
 
 		@AfterClass(groups = {"travel", "car", "health", "master"})
 		public void tearDown() {
-			driver.quit();
+//			driver.quit();
 		}
 
 

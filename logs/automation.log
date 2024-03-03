@@ -1,3 +1,12 @@
-18:47:28.846 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Select Student...
-18:47:48.179 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Select Student Plan...
-18:48:15.669 [main] INFO  testCases.TC_001_Student_Travel_Insurance - **** finished TC_001_TravelDetails  *****
+16:01:07.487 [main] INFO  testCases.TC_002_Car_Insurance - Entering customer details.. 
+16:01:08.953 [main] INFO  testCases.TC_002_Car_Insurance - Capturing Error msg.. 
+16:01:09.455 [main] INFO  testCases.TC_002_Car_Insurance - Entering correct email.. 
+16:01:46.879 [main] INFO  testCases.TC_002_Car_Insurance - Getting Car quote.. 
+16:01:47.628 [main] INFO  testCases.TC_002_Car_Insurance - **** finished TC_002_Car_Insurance  *****
+16:01:53.685 [main] INFO  testCases.TC_003_Health_Insurance - Chrome browser opened successfully
+16:01:59.744 [main] INFO  testCases.TC_003_Health_Insurance - **** starting TC_003_Health_Insurance  *****
+16:02:02.295 [main] INFO  testCases.TC_003_Health_Insurance - Open of Health Insurance Page 
+16:02:16.484 [main] INFO  testCases.TC_003_Health_Insurance - Selecting Customer deatils.. 
+16:02:24.413 [main] INFO  testCases.TC_003_Health_Insurance - Entering Customer personel deatils.. 
+16:02:44.415 [main] INFO  testCases.TC_003_Health_Insurance - Health Insurance plan.. 
+16:03:47.106 [main] INFO  testCases.TC_003_Health_Insurance - **** finished TC_003_Health_Insurance  *****

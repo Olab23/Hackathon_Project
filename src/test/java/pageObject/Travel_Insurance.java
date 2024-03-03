@@ -1,16 +1,19 @@
 package pageObject;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utilities.ExcelUtility;
 
@@ -79,10 +82,10 @@ public class Travel_Insurance extends BasePage{
 	@FindBy(id="studentTrip")
 	WebElement studentPlan;
 	
-	@FindBy(id="Traveller_1")
+	@FindBy(xpath="//input[@id='Traveller_1']")
 	WebElement student1;
 	
-	@FindBy(id="Traveller_2")
+	@FindBy(xpath="//input[@id='Traveller_2']")
 	WebElement student2;
 	
 	@FindBy(id="feet")
@@ -132,6 +135,8 @@ public class Travel_Insurance extends BasePage{
 	
 	public void nextPage() throws InterruptedException {
 		
+		WebDriverWait wait = new WebDriverWait(super.driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.elementToBeClickable(Next));
 		Next.click();
 	}
 	
@@ -225,14 +230,14 @@ public class Travel_Insurance extends BasePage{
 			}
 		}
 		
-		Next.click();
+//		Next.click();
 		
 	}
 	
 	public void medicalCond() throws InterruptedException {
 	
 		mediCondition.click();
-		Next.click();
+//		Next.click();
 	}
 	
 	public void phoneNo(String Mobile) throws InterruptedException {
@@ -242,10 +247,20 @@ public class Travel_Insurance extends BasePage{
 	}
 	
 	public void studentPlan() throws InterruptedException {
-		studentPlan.click();
-		Thread.sleep(3000);
-		student1.click();
-		student2.click();
+		WebDriverWait wait = new WebDriverWait(super.driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.elementToBeClickable(studentPlan));
+		
+		JavascriptExecutor js = (JavascriptExecutor)super.driver;
+		js.executeScript("arguments[0].click();", studentPlan);
+		
+		js.executeScript("arguments[0].click();", student1);
+		
+		wait.until(ExpectedConditions.elementToBeSelected(student1));
+
+		
+
+		js.executeScript("arguments[0].click();", student2);
+		
 		Select drpDays = new Select(dropDown);
 		drpDays.selectByVisibleText("30 Days");
 		apply.click();

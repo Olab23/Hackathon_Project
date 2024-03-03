@@ -1,31 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-28T18:45:14 IST" name="Suite" finished-at="2024-02-28T18:48:26 IST" duration-ms="192231">
+  <suite started-at="2024-03-03T15:59:03 IST" name="Suite" finished-at="2024-03-03T16:03:47 IST" duration-ms="283840">
     <groups>
+      <group name="car">
+        <method signature="TC_002_Car_Insurance.car_Insurance()[pri:0, instance:testCases.TC_002_Car_Insurance@f79e]" name="car_Insurance" class="testCases.TC_002_Car_Insurance"/>
+      </group> <!-- car -->
+      <group name="health">
+        <method signature="TC_003_Health_Insurance.HomePage()[pri:0, instance:testCases.TC_003_Health_Insurance@7ee8290b]" name="HomePage" class="testCases.TC_003_Health_Insurance"/>
+      </group> <!-- health -->
       <group name="travel">
-        <method signature="TC_001_Student_Travel_Insurance.travel_insurance()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@304bb45b]" name="travel_insurance" class="testCases.TC_001_Student_Travel_Insurance"/>
+        <method signature="TC_001_Student_Travel_Insurance.travel_insurance()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@1190200a]" name="travel_insurance" class="testCases.TC_001_Student_Travel_Insurance"/>
       </group> <!-- travel -->
       <group name="master">
-        <method signature="TC_001_Student_Travel_Insurance.travel_insurance()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@304bb45b]" name="travel_insurance" class="testCases.TC_001_Student_Travel_Insurance"/>
+        <method signature="TC_001_Student_Travel_Insurance.travel_insurance()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@1190200a]" name="travel_insurance" class="testCases.TC_001_Student_Travel_Insurance"/>
+        <method signature="TC_002_Car_Insurance.car_Insurance()[pri:0, instance:testCases.TC_002_Car_Insurance@f79e]" name="car_Insurance" class="testCases.TC_002_Car_Insurance"/>
+        <method signature="TC_003_Health_Insurance.HomePage()[pri:0, instance:testCases.TC_003_Health_Insurance@7ee8290b]" name="HomePage" class="testCases.TC_003_Health_Insurance"/>
       </group> <!-- master -->
     </groups>
-    <test started-at="2024-02-28T18:45:14 IST" name="Test" finished-at="2024-02-28T18:48:26 IST" duration-ms="192231">
-      <class name="testCases.TC_001_Student_Travel_Insurance">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@304bb45b]" started-at="2024-02-28T18:45:16 IST" name="setup" finished-at="2024-02-28T18:45:40 IST" duration-ms="23437" status="PASS">
+    <test started-at="2024-03-03T15:59:03 IST" name="Test" finished-at="2024-03-03T16:03:47 IST" duration-ms="283840">
+      <class name="testCases.TC_003_Health_Insurance">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_003_Health_Insurance@7ee8290b]" started-at="2024-03-03T16:01:48 IST" name="setup" finished-at="2024-03-03T16:01:59 IST" duration-ms="11272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="travel_insurance()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@304bb45b]" started-at="2024-02-28T18:45:40 IST" name="travel_insurance" finished-at="2024-02-28T18:48:15 IST" duration-ms="155363" status="PASS">
+        <test-method signature="HomePage()[pri:0, instance:testCases.TC_003_Health_Insurance@7ee8290b]" started-at="2024-03-03T16:01:59 IST" name="HomePage" finished-at="2024-03-03T16:03:47 IST" duration-ms="107365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_003_Health_Insurance@7ee8290b]" started-at="2024-03-03T16:03:47 IST" name="tearDown" finished-at="2024-03-03T16:03:47 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_003_Health_Insurance -->
+      <class name="testCases.TC_001_Student_Travel_Insurance">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@1190200a]" started-at="2024-03-03T15:59:04 IST" name="setup" finished-at="2024-03-03T15:59:18 IST" duration-ms="13972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="travel_insurance()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@1190200a]" started-at="2024-03-03T15:59:18 IST" name="travel_insurance" finished-at="2024-03-03T16:00:43 IST" duration-ms="84792" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- travel_insurance -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@304bb45b]" started-at="2024-02-28T18:48:16 IST" name="tearDown" finished-at="2024-02-28T18:48:26 IST" duration-ms="9656" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_001_Student_Travel_Insurance@1190200a]" started-at="2024-03-03T16:00:43 IST" name="tearDown" finished-at="2024-03-03T16:00:43 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_001_Student_Travel_Insurance -->
+      <class name="testCases.TC_002_Car_Insurance">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_002_Car_Insurance@f79e]" started-at="2024-03-03T16:00:44 IST" name="setup" finished-at="2024-03-03T16:00:54 IST" duration-ms="10261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="car_Insurance()[pri:0, instance:testCases.TC_002_Car_Insurance@f79e]" started-at="2024-03-03T16:00:54 IST" name="car_Insurance" finished-at="2024-03-03T16:01:47 IST" duration-ms="53362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- car_Insurance -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_002_Car_Insurance@f79e]" started-at="2024-03-03T16:01:48 IST" name="tearDown" finished-at="2024-03-03T16:01:48 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_002_Car_Insurance -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
