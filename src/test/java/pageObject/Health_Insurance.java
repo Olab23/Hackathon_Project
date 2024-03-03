@@ -68,7 +68,7 @@ public class Health_Insurance extends BasePage{
 	@FindBy(xpath="//div[@id='1']")
 	WebElement sortBy;
 	
-	@FindBy(xpath="//div[@class='dataScrollBox_web']//div[2]//input[1]")
+	@FindBy(xpath="//label[@for='[object Object]1']")
 	WebElement LowtoHigh;
 	
 	@FindBy(xpath="//button[normalize-space()='Apply']")
