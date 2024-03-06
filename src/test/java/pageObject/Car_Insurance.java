@@ -27,7 +27,7 @@ public class Car_Insurance extends BasePage {
 	@FindBy(xpath="//*[@id='searchInput']/div/input")
 	WebElement searchRto;
 	
-	@FindBy(xpath="//span[text()='MH35-GONDIA(Maharashtra)']")
+	@FindBy(xpath="//span[text()='MH12-PUNE(Maharashtra)']")
 	WebElement selectCity;
 	
 	@FindBy(xpath="//span[@class='tata']")

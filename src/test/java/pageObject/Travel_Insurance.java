@@ -100,6 +100,9 @@ public class Travel_Insurance extends BasePage{
 	@FindBy(xpath="//input[@value='Premium low to high']")
 	WebElement LowToHigh;
 	
+	@FindBy(xpath="(//div[@class='quotesCard__quotesListWrap'])[1]")
+	WebElement PList;
+	
 	@FindBy(xpath="//p[@class='quotesCard--insurerName']")
 	List<WebElement> companyName;
 	
@@ -244,13 +247,18 @@ public class Travel_Insurance extends BasePage{
 		
 		mobileNo.sendKeys(Mobile);
 		viewPlans.click();
+		Thread.sleep(4000);
 	}
 	
 	public void studentPlan() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(super.driver, Duration.ofSeconds(30));
+		
+		wait.until(ExpectedConditions.visibilityOf(PList));
+		
 		wait.until(ExpectedConditions.elementToBeClickable(studentPlan));
 		
 		JavascriptExecutor js = (JavascriptExecutor)super.driver;
+		
 		js.executeScript("arguments[0].click();", studentPlan);
 		
 		js.executeScript("arguments[0].click();", student1);

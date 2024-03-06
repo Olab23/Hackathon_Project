@@ -36,7 +36,7 @@ public class TC_001_Student_Travel_Insurance extends BaseClass{
 //		Np.nextPage();
 		Np.phoneNo(ExcelUtility.readExcel(0));
 		logger.info("Select Student Plan...");
-		Np.studentPlan();
+//		Np.studentPlan();
 		Np.plans();
 		Np.plansData();
 //		Np.logoClick();

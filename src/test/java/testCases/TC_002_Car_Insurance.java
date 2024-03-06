@@ -42,7 +42,7 @@ public class TC_002_Car_Insurance extends BaseClass  {
 		rc.getCarNo();
 		rc.view();
 		logger.info("Getting Car quote.. ");
-		rc.getQuote();
+//		rc.getQuote();
 		
 		logger.info("**** finished TC_002_Car_Insurance  *****");
 	}

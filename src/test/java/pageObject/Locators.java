@@ -22,10 +22,10 @@ public class Locators extends BasePage{
 	}
 	
 	//Explicit wait for visibility Of Element Located
-	public void Explicit(String locator)
+	public void Explicit(WebElement locator)
 	{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+		wait.until(ExpectedConditions.visibilityOf(locator));
 	}
 
 }
