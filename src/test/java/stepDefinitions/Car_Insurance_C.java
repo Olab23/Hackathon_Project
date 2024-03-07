@@ -45,7 +45,7 @@ public class Car_Insurance_C {
 		rc.getMobilNo();
 	}
 
-	@When("user capture error msg")
+	@Then("user capture error msg")
 	public void user_capture_error_msg() {
 		Car_Insurance rc = new Car_Insurance(BaseClass.getDriver());
 		rc.getErrorMessage();

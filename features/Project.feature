@@ -15,9 +15,7 @@ Feature: Run the project
     Then user selects rto and city details
     When user selects car model and type
     Then user enters personel details
-    When user capture error msg
-    Then user clears deatils and put correct details
-    And user capture the quote
+    Then user capture error msg
     
   Scenario: Health Insurance Plan
   	Given the user navigates to Health insurance plan

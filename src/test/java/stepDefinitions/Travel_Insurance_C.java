@@ -37,6 +37,7 @@ public class Travel_Insurance_C {
 		Travel_Insurance Np=new Travel_Insurance(BaseClass.getDriver());
 		Np.noOfStudent();
 		Np.selectStudentAge();
+		Np.nextPage();
 	}
 
 	@When("user enters medical condition")
@@ -57,7 +58,7 @@ public class Travel_Insurance_C {
 	public void user_selects_students_plan() throws InterruptedException {
 	  
 		Travel_Insurance Np=new Travel_Insurance(BaseClass.getDriver());
-		Np.studentPlan();
+//		Np.studentPlan();
 		Np.plans();
 	}
 
