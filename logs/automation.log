@@ -1,1 +1,12 @@
-12:05:31.200 [main] INFO  testCases.TC_002_Car_Insurance - **** finished TC_002_Car_Insurance  *****
+17:44:11.825 [main] INFO  testCases.TC_002_Car_Insurance - Selecting city.. 
+17:44:12.358 [main] INFO  testCases.TC_002_Car_Insurance - Selecting car details.. 
+17:44:15.733 [main] INFO  testCases.TC_002_Car_Insurance - Entering customer details.. 
+17:44:17.659 [main] INFO  testCases.TC_002_Car_Insurance - Capturing Error msg.. 
+17:44:17.771 [main] INFO  testCases.TC_002_Car_Insurance - **** finished TC_002_Car_Insurance  *****
+17:44:33.533 [main] INFO  testCases.TC_003_Health_Insurance - Chrome browser opened successfully
+17:44:39.367 [main] INFO  testCases.TC_003_Health_Insurance - **** starting TC_003_Health_Insurance  *****
+17:44:40.484 [main] INFO  testCases.TC_003_Health_Insurance - Open of Health Insurance Page 
+17:44:47.987 [main] INFO  testCases.TC_003_Health_Insurance - Selecting Customer deatils.. 
+17:44:58.842 [main] INFO  testCases.TC_003_Health_Insurance - Entering Customer personel deatils.. 
+17:45:17.478 [main] INFO  testCases.TC_003_Health_Insurance - Health Insurance plan.. 
+17:46:28.918 [main] INFO  testCases.TC_003_Health_Insurance - **** finished TC_003_Health_Insurance  *****

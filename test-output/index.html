@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\2303651\eclipse-workspace\Hackathon_Policy_Bazar\testng.xml</span>
+                    <span>C:\Users\2303651\eclipse-workspace\Hackathon_Policy_Bazar\grouping.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -131,6 +131,21 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">testCases.TC_002_Car_Insurance</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="car_Insurance">
+                  </a> <!-- car_Insurance -->
+                  <span class="method-name">car_Insurance</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">testCases.TC_003_Health_Insurance</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -158,25 +173,10 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testCases.TC_002_Car_Insurance</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="car_Insurance">
-                  </a> <!-- car_Insurance -->
-                  <span class="method-name">car_Insurance</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\2303651\eclipse-workspace\Hackathon_Policy_Bazar\testng.xml</span>
+            <span class="header-content">C:\Users\2303651\eclipse-workspace\Hackathon_Policy_Bazar\grouping.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -187,6 +187,11 @@
     &lt;listener class-name=&quot;utilities.ExtentReportManager&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;master&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testCases.TC_001_Student_Travel_Insurance&quot;/&gt;
       &lt;class name=&quot;testCases.TC_002_Car_Insurance&quot;/&gt;
@@ -272,22 +277,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'car_Insurance')
-data.setCell(0, 2, 'testCases.TC_002_Car_Insurance')
-data.setCell(0, 3, 133718);
+data.setCell(0, 1, 'HomePage')
+data.setCell(0, 2, 'testCases.TC_003_Health_Insurance')
+data.setCell(0, 3, 109555);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'HomePage')
-data.setCell(1, 2, 'testCases.TC_003_Health_Insurance')
-data.setCell(1, 3, 104220);
+data.setCell(1, 1, 'travel_insurance')
+data.setCell(1, 2, 'testCases.TC_001_Student_Travel_Insurance')
+data.setCell(1, 3, 47377);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'travel_insurance')
-data.setCell(2, 2, 'testCases.TC_001_Student_Travel_Insurance')
-data.setCell(2, 3, 83848);
+data.setCell(2, 1, 'car_Insurance')
+data.setCell(2, 2, 'testCases.TC_002_Car_Insurance')
+data.setCell(2, 3, 13883);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -320,41 +325,41 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">travel_insurance</span>
-                <span class="method-start">55077 ms</span>
+                <span class="method-start">52742 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">139733 ms</span>
+                <span class="method-start">100701 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC_002_Car_Insurance</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">139748 ms</span>
+                <span class="method-start">100706 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">car_Insurance</span>
-                <span class="method-start">187345 ms</span>
+                <span class="method-start">117421 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">324127 ms</span>
+                <span class="method-start">131749 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC_003_Health_Insurance</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">324139 ms</span>
+                <span class="method-start">131751 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">HomePage</span>
-                <span class="method-start">346275 ms</span>
+                <span class="method-start">152896 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">451038 ms</span>
+                <span class="method-start">262947 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

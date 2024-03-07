@@ -1,5 +1,6 @@
 package pageObject;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,14 +26,25 @@ public class HomePage extends BasePage{
 	WebElement healthInsurance;
 	
 	public void travelinsurance() {
-		travelInsurance.click();
+		
+		JavascriptExecutor js = (JavascriptExecutor)super.driver;
+		js.executeScript("document.body.style.zoom='90%'");
+		js.executeScript("arguments[0].click();", travelInsurance);
+
 	}
 
 	public void Carinsurance() {
-		carInsurance.click();
+		
+		JavascriptExecutor js = (JavascriptExecutor)super.driver;
+		js.executeScript("document.body.style.zoom='90%'");
+		js.executeScript("arguments[0].click();", carInsurance);
+
 	}
 	
 	public void Healthinsurance() {
-		healthInsurance.click();
+		
+		JavascriptExecutor js = (JavascriptExecutor)super.driver;
+		js.executeScript("document.body.style.zoom='90%'");
+		js.executeScript("arguments[0].click();", healthInsurance);
 	}
 }

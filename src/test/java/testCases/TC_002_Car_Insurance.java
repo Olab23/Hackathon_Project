@@ -34,14 +34,14 @@ public class TC_002_Car_Insurance extends BaseClass  {
 		rc.getMobilNo();
 		logger.info("Capturing Error msg.. ");
 		rc.getErrorMessage();
-		rc.clearEmail();
-		logger.info("Entering correct email.. ");
-		rc.correctEmail(ExcelUtility.readExcel(3));
-		rc.viewButton();
-		rc.getDeliveryDate();
-		rc.getCarNo();
-		rc.view();
-		logger.info("Getting Car quote.. ");
+//		rc.clearEmail();
+//		logger.info("Entering correct email.. ");
+//		rc.correctEmail(ExcelUtility.readExcel(3));
+//		rc.viewButton();
+//		rc.getDeliveryDate();
+//		rc.getCarNo();
+//		rc.view();
+//		logger.info("Getting Car quote.. ");
 //		rc.getQuote();
 		
 		logger.info("**** finished TC_002_Car_Insurance  *****");

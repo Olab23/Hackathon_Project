@@ -3,6 +3,7 @@ package pageObject;
 import java.io.IOException;
 import java.util.List;
 
+import org.apache.logging.log4j.plugins.di.Keys;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -24,41 +25,71 @@ public class Car_Insurance extends BasePage {
 	@FindBy(linkText="Buying a new car? Click here")
 	WebElement buyingCar;
 	
+	@FindBy(xpath="//span[@class='CarRegDetails_blueTextButton__P1blP blueTextButton fontMedium']")
+	WebElement newCar;
+	
 	@FindBy(xpath="//*[@id='searchInput']/div/input")
 	WebElement searchRto;
+	
+	@FindBy(xpath="//div[@class='dropdown']")
+	WebElement BlueRto;
+	
+	@FindBy(xpath="//span[normalize-space()='Pune']")
+	WebElement Bcity;
+	
+	@FindBy(xpath="//li[normalize-space()='MH12']")
+	WebElement Bcode;
 	
 	@FindBy(xpath="//span[text()='MH12-PUNE(Maharashtra)']")
 	WebElement selectCity;
 	
-	@FindBy(xpath="//span[@class='tata']")
+	@FindBy(xpath="//span[normalize-space()='TATA']")
 	WebElement selectCar;
 	
-	@FindBy(xpath="//b[text()='NEXON']")
+	@FindBy(xpath="//li[normalize-space()='NEXON']")
 	WebElement carModel;
 	
-	@FindBy(xpath="//b[text()='Petrol']")
+	@FindBy(xpath="//li[normalize-space()='Petrol']")
 	WebElement fuelType;
 	
 	@FindBy(xpath="//li[text()='Automatic']")
 	WebElement carVariant;
 	
-	@FindBy(xpath="//b[text()='Creative Plus 1.2 Revotron Petrol 6AMT (1199 cc)']")
+	@FindBy(xpath="//li[normalize-space()='Creative Plus 1.2 Revotron Petrol 6AMT (1199 cc)']")
 	WebElement carVariantModel;
+	
+	@FindBy(xpath="//li[normalize-space()='Brand New Car']")
+	WebElement BrandNC;
 	
 	@FindBy(xpath="//*[@id='name']")
 	WebElement name;
 	
+	@FindBy(xpath="//input[@placeholder='Full name']")
+	WebElement Bname;
+	
 	@FindBy(xpath="//*[@id='email']")
 	WebElement email;
+	
+	@FindBy(xpath="//input[@placeholder='Your email']")
+	WebElement Bemail;
 	
 	@FindBy(xpath="//*[@id='mobileNo']")
 	WebElement mobilNo;
 	
+	@FindBy(xpath="//input[@placeholder='Mobile number']")
+	WebElement BmobilNo;
+	
 	@FindBy(xpath="//div[@class='msg-error show']")
 	WebElement errorMessage;
 	
+	@FindBy(xpath="//div[@class='errorMsg']")
+	WebElement BerrorMessage;
+	
 	@FindBy(xpath="//span[text()='View Prices']")
 	WebElement viewButtonClick;
+	
+	@FindBy(xpath="//button[normalize-space()='View Prices']")
+	WebElement BviewButtonClick;
 	
 	@FindBy(xpath="//button[normalize-space()='I don't know my car's delivery date']")
 	WebElement deliveryDate;
@@ -87,15 +118,33 @@ public class Car_Insurance extends BasePage {
 
 	
 	public void buyCar() {
+		try {
 		buyingCar.click();
+		}
+		catch(Exception e) {
+			newCar.click();
+		}
 	}
 	
 	public void getSearchRto() {
-		searchRto.click();
+		
+		try {
+			searchRto.click();
+		}
+		catch(Exception e) {
+			BlueRto.click();
+		}
+		
 	}
 	
 	public void selectCityOption() {
+		try {
 		selectCity.click();
+		}
+		catch(Exception e) {
+			Bcity.click();
+			Bcode.click();
+		}
 	}
 	
 	public void selectCarOption() {
@@ -116,36 +165,75 @@ public class Car_Insurance extends BasePage {
 		carVariantModel.click();
 	}
 	public void getName(String name1) {
+		try {
 		name.sendKeys(name1);
+		}
+		catch(Exception e) {
+			Bname.click();
+			Bname.sendKeys(name1);
+		}
 	}
 	public void getEmail(String mail) {
-		email.sendKeys(mail);
+
+		try {
+			email.sendKeys(mail);
+			}
+			catch(Exception e) {
+				Bemail.click();
+				Bemail.sendKeys(mail);
+			}
 	}
 	public void getMobilNo() {
+		try {
 		mobilNo.sendKeys("9876543468");
+		}
+		catch(Exception e) {
+			BmobilNo.click();
+			BmobilNo.sendKeys("9876543468");
+		}
 	}
 	
 	public void getErrorMessage() {
 		System.out.println("---Capture the error message--- ");
+		try {
 		System.out.println( errorMessage.getText());
+		}
+		catch(Exception e) {
+			System.out.println( BerrorMessage.getText());
+		}
 	}
 	
 	public void clearEmail() {
+		try {
 		email.clear();
+		}
+		catch(Exception e) {
+			Bemail.click();
+//			Bemail.clear();
+		}
 	}
 	public void correctEmail(String mail1) {
+		try {
 		email.sendKeys(mail1);
+		}
+		catch(Exception e) {
+			Bemail.click();
+			Bemail.sendKeys(mail1);
+		}
 	}
 	public void viewButton() {
+		try {
 		viewButtonClick.click();
+		}
+		catch(Exception e) {
+			BviewButtonClick.click();
+		}
 	}
 	
 	public void getDeliveryDate() {
-		JavascriptExecutor js = (JavascriptExecutor)super.driver;
 		
-//		js.executeScript("arguments[0].click();", super.driver.findElement(By.xpath("(//button[normalize-space()='I don't know my car's delivery date'])[1]")));
 		super.driver.findElement(By.xpath("(//button[normalize-space()=\"I don't know my car's delivery date\"])[1]")).click();
-//		js.executeScript("arguments[0].click();", super.driver.findElement(By.xpath("(//button[normalize-space()='I don't know my car's ex-showroom price'])[1]")));
+
 		super.driver.findElement(By.xpath("(//button[normalize-space()=\"I don't know my car's ex-showroom price\"])[1]")).click();
 	}
 	
