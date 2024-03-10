@@ -1,0 +1,24 @@
+14:06:35.290 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Chrome browser opened successfully
+14:06:46.558 [main] INFO  testCases.TC_001_Student_Travel_Insurance - **** starting TC_001_TravelDetails  *****
+14:06:46.884 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Opening of Travel Insurance Page 
+14:06:54.512 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Entering customer details.. 
+14:06:56.392 [main] INFO  testCases.TC_001_Student_Travel_Insurance - clicked on continue..
+14:07:01.142 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Select Student...
+14:07:29.054 [main] INFO  testCases.TC_001_Student_Travel_Insurance - Select Student Plan...
+14:07:36.734 [main] INFO  testCases.TC_001_Student_Travel_Insurance - **** finished TC_001_TravelDetails  *****
+14:08:03.819 [main] INFO  testCases.TC_002_Car_Insurance - Chrome browser opened successfully
+14:08:12.042 [main] INFO  testCases.TC_002_Car_Insurance - **** starting TC_002_Car_Insurance  *****
+14:08:13.483 [main] INFO  testCases.TC_002_Car_Insurance - Buying new car.. 
+14:08:19.836 [main] INFO  testCases.TC_002_Car_Insurance - Search RTO.. 
+14:08:21.428 [main] INFO  testCases.TC_002_Car_Insurance - Selecting city.. 
+14:08:21.874 [main] INFO  testCases.TC_002_Car_Insurance - Selecting car details.. 
+14:08:24.921 [main] INFO  testCases.TC_002_Car_Insurance - Entering customer details.. 
+14:08:26.684 [main] INFO  testCases.TC_002_Car_Insurance - Capturing Error msg.. 
+14:08:26.765 [main] INFO  testCases.TC_002_Car_Insurance - **** finished TC_002_Car_Insurance  *****
+14:08:36.179 [main] INFO  testCases.TC_003_Health_Insurance - Chrome browser opened successfully
+14:09:09.268 [main] INFO  testCases.TC_003_Health_Insurance - **** starting TC_003_Health_Insurance  *****
+14:09:10.729 [main] INFO  testCases.TC_003_Health_Insurance - Open of Health Insurance Page 
+14:09:17.747 [main] INFO  testCases.TC_003_Health_Insurance - Selecting Customer deatils.. 
+14:09:23.752 [main] INFO  testCases.TC_003_Health_Insurance - Entering Customer personel deatils.. 
+14:09:40.450 [main] INFO  testCases.TC_003_Health_Insurance - Health Insurance plan.. 
+14:10:30.333 [main] INFO  testCases.TC_003_Health_Insurance - **** finished TC_003_Health_Insurance  *****
