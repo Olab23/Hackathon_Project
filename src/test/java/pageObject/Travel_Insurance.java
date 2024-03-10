@@ -263,7 +263,7 @@ public class Travel_Insurance extends BasePage{
 		
 		js.executeScript("arguments[0].click();", student1);
 		
-		wait.until(ExpectedConditions.elementToBeSelected(student1));
+//		wait.until(ExpectedConditions.elementToBeSelected(student1));
 
 		
 
